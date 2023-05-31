@@ -5,7 +5,7 @@
   font-size: 2rem;
 }
 .Projects-maindiv{
-  margin-bottom: 150px;
+  margin-bottom: 70px;
 }
 .heading-div {
   width: fit-content;
@@ -158,6 +158,7 @@
 
 .card:hover .heading {
   color: white;
+  filter: drop-shadow(0 0 23px white);
 }
 
 .card:hover .para {
@@ -170,6 +171,7 @@
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
+  filter: none;
 }
 
 .projectimage {
@@ -200,7 +202,6 @@
   justify-content: space-between;
   width: 60%;
   margin: auto;
-
 }
 
 .techstacks-fashion {
@@ -211,6 +212,9 @@
 
 }
 
+.icon-background{
+  filter: drop-shadow(2px 2px 10px rgb(66, 64, 64))
+}
 
 
 .iconimg {
@@ -463,6 +467,13 @@
 
 
 }
+
+
+
+
+
+
+
 
 
 

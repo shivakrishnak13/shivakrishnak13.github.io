@@ -55,22 +55,23 @@ const Contactme = () => {
                     <div className="contact-card">
 
                         <span className="contact-title">Feel Free To Contact</span>
-                        <form className="contact-form">
+                        <form className="contact-form" action="https://formsubmit.co/kosarishivakrishna10@gmail.com" method="POST">
                             <div className="contact-group">
                                 <input placeholder="‎" type="text" required="" />
-                                <label for="name">Name</label>
+                                <label htmlFor="name">Name</label>
                             </div>
                             <div className="contact-group">
                                 <input placeholder="‎" type="email" id="email" name="email" required="" />
-                                <label for="email">Email</label>
+                                <label htmlFor="email">Email</label>
                             </div>
                             <div className="contact-group">
-                                <input placeholder="‎" type="text" id="subject" name="subject" required="" />
-                                <label for="subject">Subject</label>
+                                <input placeholder="‎" type="text" id="subject" name="_subject" required="" />
+                                <label htmlFor="subject">Subject</label>
                             </div>
                             <div className="contact-group">
-                                <textarea placeholder="‎" id="comment" name="comment" rows="5" required=""></textarea>
-                                <label for="comment">Message</label>
+                                <textarea placeholder="‎" id="comment" name="message" rows="5" required=""></textarea>
+                                <label htmlFor="comment">Message</label>
+                                <input type="hidden" name="_template" value="box"></input>
                             </div>
                             <button type="submit">Send Message</button>
                         </form>
