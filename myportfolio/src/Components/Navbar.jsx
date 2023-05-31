@@ -4,32 +4,42 @@ import styles from "../Styles/navbar.module.css";
 import { Menu, MenuButton, MenuList, MenuItem, IconButton } from '@chakra-ui/react';
 import { SlMenu } from "react-icons/sl";
 import { GrClose } from "react-icons/gr";
-
+import resume from "../files/Shivakrishna_Kosari_Resume.pdf"
 
 const Navbar = () => {
 
-    const [ option,SetOptions] = useState(false)
-    const [navbg,setnavbg]= useState(false)
+    const [option, SetOptions] = useState(false)
+    const [navbg, setnavbg] = useState(false)
 
-    const navScroll = ()=>{
-       if( window.scrollY > 50){
-        setnavbg(true)
-       }else{
-        setnavbg(false)
-       }
+    const navScroll = () => {
+        if (window.scrollY > 50) {
+            setnavbg(true)
+        } else {
+            setnavbg(false)
+        }
     }
-
 
 
 
     window.addEventListener("scroll", navScroll)
 
-const showOptions = () => {
-    SetOptions(!option)
-}
+    const showOptions = () => {
+        SetOptions(!option)
+    }
+
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = resume;
+        link.setAttribute('download', 'resume.pdf');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      };
+
+
 
     return (
-        <div className={navbg ? styles.active : styles.top_header_div }>
+        <div className={navbg ? styles.active : styles.top_header_div}>
             <nav className={styles.nav}>
 
                 <div className={styles.title_logo}>
@@ -56,7 +66,10 @@ const showOptions = () => {
                             <a href="#">Statistics</a>
                         </li>
                         <li>
-                            <a href="#">Resume</a>
+                            <button class="nav-resume-button type1" onClick={handleDownload}>
+                               
+                            </button>
+                            {/* <a href="#">Resume</a> */}
                         </li>
                     </ul>
                 </div>
@@ -66,13 +79,13 @@ const showOptions = () => {
 
                     <Menu>
                         <MenuButton
-                        border={"none"}
+                            border={"none"}
                             as={IconButton}
                             aria-label='Options'
                             icon={option ? (
                                 <GrClose size={"20px"} />
                             ) : (
-                                <SlMenu size={"20px"}/>
+                                <SlMenu size={"20px"} />
                             )}
                             onClick={showOptions}
                             variant='none'
@@ -80,25 +93,25 @@ const showOptions = () => {
                         />
                         <MenuList width={"200px"} >
                             <MenuItem height={"30px"} >
-                            Home
+                                Home
                             </MenuItem>
                             <MenuItem >
-                            About
+                                About
                             </MenuItem>
                             <MenuItem >
-                            Skills
+                                Skills
                             </MenuItem>
                             <MenuItem >
-                            Projects
+                                Projects
                             </MenuItem>
                             <MenuItem >
-                            Contacts
+                                Contacts
                             </MenuItem>
                             <MenuItem >
-                            Statistics
+                                Statistics
                             </MenuItem>
                             <MenuItem >
-                            Resume
+                                Resume
                             </MenuItem>
                         </MenuList>
                     </Menu>

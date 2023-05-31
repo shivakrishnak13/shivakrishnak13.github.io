@@ -77,8 +77,11 @@ const Projects = () => {
 
                </div>
                <div className="content">
-                  <p className="heading">StyleSpot
-                  </p><p className="para">
+                  <p className="heading">StyleSpot</p>
+                 
+
+
+                  <p className="para">
                      An eCommerce website that sells a variety of fashion clothing. Built on ReactJS for the frontend and utilizes Redux for state management. The backend is implemented using a JSON server.
                   </p>
                   <div className='techstacks'>
@@ -133,9 +136,9 @@ const Projects = () => {
             </div>
 
 
-         {/* Megatmart Project */}
+            {/* Megatmart Project */}
 
-         <div className="card">
+            <div className="card">
                <div>
                   <img className='projectimage' src={megamart} alt="megamart" />
                   <div className='btnhover'>
@@ -181,7 +184,7 @@ const Projects = () => {
                <div className="content">
                   <p className="heading">MegaMart
                   </p><p className="para">
-                  MegaMart is an individual project, a cloned website of Indiamart Shopping, offering users the ability to buy or sell products. The platform is built using React and Chakra UI for the frontend, while the backend is powered by a JSON server.
+                     MegaMart is an individual project, a cloned website of Indiamart Shopping, offering users the ability to buy or sell products. The platform is built using React and Chakra UI for the frontend, while the backend is powered by a JSON server.
                   </p>
                   <div className='techstacks'>
                      <Tooltip label="React" hasArrow bg={"#0e4166"} paddingLeft={"5px"} paddingRight={"5px"} fontSize={"0.8rem"} color={"white"} aria-label='A tooltip'>
@@ -189,7 +192,7 @@ const Projects = () => {
                            <img className='iconimg' src={reactimg} alt="react" />
                         </div>
                      </Tooltip>
-                  
+
                      <Tooltip label="Chakra-UI" hasArrow bg={"#0e4166"} paddingLeft={"5px"} paddingRight={"5px"} fontSize={"0.8rem"} color={"white"} aria-label='A tooltip'>
                         <div className='icon-background'>
                            <img className='iconimg' src={chakraui} alt="chakraui" />
@@ -279,10 +282,10 @@ const Projects = () => {
                <div className="content">
                   <p className="heading">FashionKart
                   </p><p className="para">
-                  Fashion Kart is a cloned website of Flipkart, a popular e-commerce platform enabling users to buy and sell products. This collaborative project utilizes HTML, CSS, and JavaScript for the frontend development, while the backend is supported by a JSON server.
+                     Fashion Kart is a cloned website of Flipkart, a popular e-commerce platform enabling users to buy and sell products. This collaborative project utilizes HTML, CSS, and JavaScript for the frontend development, while the backend is supported by a JSON server.
                   </p>
                   <div className='techstacks-fashion'>
-                   
+
                      <Tooltip label="HTML" hasArrow bg={"#0e4166"} paddingLeft={"5px"} paddingRight={"5px"} fontSize={"0.8rem"} color={"white"} aria-label='A tooltip'>
                         <div className='icon-background'>
                            <img className='iconimg' src={htmlimg} alt="html" />
@@ -370,10 +373,10 @@ const Projects = () => {
                <div className="content">
                   <p className="heading">FashionVerce
                   </p><p className="para">
-                  Fashionverce is an individual project, an ecommerce website specializing in the sale of a wide range of fashion clothing. The platform is built using HTML, CSS, and Javascript, allowing for a visually appealing and interactive user experience. Customers can explore and purchase fashionable clothing items conveniently on Fashionverce.
+                     Fashionverce is an individual project, an ecommerce website specializing in the sale of a wide range of fashion clothing. The platform is built using HTML, CSS, and Javascript, allowing for a visually appealing and interactive user experience. Customers can explore and purchase fashionable clothing items conveniently on Fashionverce.
                   </p>
                   <div className='techstacks-fashion'>
-                   
+
                      <Tooltip label="HTML" hasArrow bg={"#0e4166"} paddingLeft={"5px"} paddingRight={"5px"} fontSize={"0.8rem"} color={"white"} aria-label='A tooltip'>
                         <div className='icon-background'>
                            <img className='iconimg' src={htmlimg} alt="html" />
