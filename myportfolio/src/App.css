@@ -8,6 +8,7 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    bottom: 5px;
     transition: all 0.5s ease-in-out;
   }
   
@@ -109,3 +110,14 @@
   /* Add the Font Awesome CSS link in your HTML file or import the icons properly in your project */
   
   
+
+  .mob-menu{
+    height: 30px;
+    padding-left: 10px;
+    background: rgb(99,192,211);
+background: linear-gradient(90deg, rgba(99,192,211,1) 28%, rgba(58,125,206,1) 100%);
+  }
+
+  .mob-menu>a{
+    color: #a8dff1;
+  }

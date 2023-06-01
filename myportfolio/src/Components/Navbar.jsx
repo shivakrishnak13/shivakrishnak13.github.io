@@ -37,6 +37,8 @@ const Navbar = () => {
       };
 
 
+      
+
 
     return (
         <div className={navbg ? styles.active : styles.top_header_div}>
@@ -54,16 +56,16 @@ const Navbar = () => {
                             <a href="#About">About</a>
                         </li>
                         <li>
-                            <a href="#">Skills</a>
+                            <a href="#techstacks">Skills</a>
                         </li>
                         <li>
                             <a href="#Projects">Projects</a>
                         </li>
                         <li>
-                            <a href="#">Contacts</a>
+                            <a href="#Statistics">Statistics</a>
                         </li>
                         <li>
-                            <a href="#">Statistics</a>
+                            <a href="#Contacts">Contacts</a>
                         </li>
                         <li>
                             <button class="nav-resume-button type1" onClick={handleDownload}>
@@ -82,36 +84,33 @@ const Navbar = () => {
                             border={"none"}
                             as={IconButton}
                             aria-label='Options'
-                            icon={option ? (
-                                <GrClose size={"20px"} />
-                            ) : (
-                                <SlMenu size={"20px"} />
-                            )}
+                            icon={<SlMenu size={"20px"} />}
                             onClick={showOptions}
                             variant='none'
                             background={"transparent"}
+                            borderRadius={"2rem"}
                         />
                         <MenuList width={"200px"} >
-                            <MenuItem height={"30px"} >
-                                Home
+                            <MenuItem className='mob-menu' >
+                            <a href="#">Home</a>
                             </MenuItem>
-                            <MenuItem >
-                                About
+                            <MenuItem className='mob-menu'>
+                            <a href="#About">About</a>
+                            </MenuItem >
+                            <MenuItem className='mob-menu' >
+                            <a href="#techstacks">Skills</a>
                             </MenuItem>
-                            <MenuItem >
-                                Skills
+                            <MenuItem className='mob-menu' >
+                            <a href="#Projects">Projects</a>
                             </MenuItem>
-                            <MenuItem >
-                                Projects
+                            <MenuItem className='mob-menu'>
+                            <a href="#Statistics">Statistics</a>
                             </MenuItem>
-                            <MenuItem >
-                                Contacts
+                            <MenuItem className='mob-menu'>
+                            <a href="#Contacts">Contacts</a>
                             </MenuItem>
-                            <MenuItem >
-                                Statistics
-                            </MenuItem>
-                            <MenuItem >
-                                Resume
+                            <MenuItem onClick={handleDownload} className='mob-menu'>
+                            Resume
                             </MenuItem>
                         </MenuList>
                     </Menu>

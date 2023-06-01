@@ -7,7 +7,7 @@ import {MdLocationOn} from "react-icons/md";
 
 const Contactme = () => {
     return (
-        <div className='Contact-maindiv'>
+        <div className='Contact-maindiv' id='Contacts'>
             <div className='heading-div'>
                 <button className='heading-textbtn'>
                     <h1 className='mainheading'>Contact <span style={{ color: "#0e4166" }}>Me</span></h1>
