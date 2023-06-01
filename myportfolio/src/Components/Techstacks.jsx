@@ -5,7 +5,7 @@ import Nodejs from "../Images/icons8-node-js.svg";
 import Expressjs from "../Images/icons8-express-js.svg";
 import github from "../Images/icons8-github (1).svg";
 import vercel from "../Images/vercel-seeklogo.com.svg";
-import netlify from "../Images/icons8-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites.-96.png";
+import netlify from "../Images/netlify.png";
 import vscode from "../Images/icons8-visual-studio-code-2019.svg";
 import Mongo from "../Images/icons8-mongodb-a-cross-platform-document-oriented-database-program-96.png";
 import { Tooltip } from '@chakra-ui/react'
