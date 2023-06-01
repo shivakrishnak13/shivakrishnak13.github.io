@@ -4,9 +4,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
 }
-.Projects-maindiv{
-  margin-bottom: 70px;
-}
+
 .heading-div {
   width: fit-content;
   margin: auto;
@@ -55,7 +53,7 @@
 
 
 .Projects-maindiv {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .Projectcards-div {

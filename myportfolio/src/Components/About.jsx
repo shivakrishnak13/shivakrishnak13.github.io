@@ -2,9 +2,10 @@ import React from 'react';
 import "../Styles/about.css";
 import myphoto from "../Images/myphoto.png"
 import resume from "../files/Shivakrishna_Kosari_Resume.pdf"
+import { forwardRef } from 'react';
 
 
-const About = () => {
+const About = ({ref,func}) => {
 
     const handleDownload = () => {
         const link = document.createElement('a');
@@ -16,7 +17,7 @@ const About = () => {
       };
 
     return (
-        <div className='About-div' id='About'>
+        <div className='About-div' id='About' ref={ref} onScroll={func}>
 
             <h1 className='about-me'>About <span style={{ color: "#0e4166" }}>Me</span></h1>
 
