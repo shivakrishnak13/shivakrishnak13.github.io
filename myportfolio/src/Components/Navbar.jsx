@@ -3,7 +3,6 @@ import logo from "../Images/k.png"
 import styles from "../Styles/navbar.module.css";
 import { Menu, MenuButton, MenuList, MenuItem, IconButton } from '@chakra-ui/react';
 import { SlMenu } from "react-icons/sl";
-import { GrClose } from "react-icons/gr";
 import resume from "../files/Shivakrishna_Kosari_Resume.pdf"
 
 const Navbar = () => {
@@ -50,7 +49,7 @@ const Navbar = () => {
                 <div >
                     <ul id={styles.nav_links} >
                         <li>
-                            <a href="#">Home</a>
+                            <a href="#home">Home</a>
                         </li>
                         <li>
                             <a href="#About">About</a>
@@ -92,7 +91,7 @@ const Navbar = () => {
                         />
                         <MenuList width={"200px"} >
                             <MenuItem className='mob-menu' >
-                            <a href="#">Home</a>
+                            <a href="#home">Home</a>
                             </MenuItem>
                             <MenuItem className='mob-menu'>
                             <a href="#About">About</a>
