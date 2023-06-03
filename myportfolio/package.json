@@ -1,6 +1,6 @@
 {
   "name": "myportfolio",
-  "homepage": "https://shivakrishnak13.github.io/shivakrishnak13.github.io",
+  "homepage": "https://shivakrishna13.github.io/myportfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -31,7 +31,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
