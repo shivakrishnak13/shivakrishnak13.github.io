@@ -2,7 +2,6 @@ import React from 'react';
 import "../Styles/about.css";
 import myphoto from "../Images/myphoto.png"
 import resume from "../files/Shivakrishna_Kosari_Resume.pdf"
-import { forwardRef } from 'react';
 
 
 const About = ({ref,func}) => {

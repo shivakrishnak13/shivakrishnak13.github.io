@@ -8,7 +8,6 @@ import Projects from './Components/Projects';
 import ScrollToTopButton from './Components/Scroll';
 import Statistics from './Components/Statistics';
 import Techstacks from './Components/Techstacks';
-import { ChakraProvider } from '@chakra-ui/react';
 import Footer from './Components/Footer';
 
 
