@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
 .About-div{
     padding-top: 60px;
+    
 }
 .about-me{
     text-align: center;
     font-family: 'Poppins', sans-serif;
    font-weight: bold;
+   
 }
 
 .image-des{
@@ -27,11 +30,12 @@
 .image-des>div>p{
     text-align: justify;
     margin-top: 30px;
-    margin-left: 30px;
+    margin-left: 10px;
     line-height: 1.3rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     
-    font-family: 'Poppins', sans-serif;
+
+    font-family: 'Outfit', sans-serif;
     font-weight: 300;
 
 }
@@ -142,7 +146,7 @@
     }
 
     .image-des>div:nth-child(2)>p{
-        font-size: 0.9rem;
+        font-size: 1rem;
         line-height: normal;
         padding-right: 10px;
     }

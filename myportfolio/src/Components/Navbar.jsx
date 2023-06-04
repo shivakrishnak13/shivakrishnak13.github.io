@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import logo from "../Images/k.png"
 import styles from "../Styles/navbar.module.css";
-import { Menu, MenuButton, MenuList, MenuItem, IconButton } from '@chakra-ui/react';
+import { Menu, MenuButton, MenuList, MenuItem, IconButton, Link } from '@chakra-ui/react';
 import { SlMenu } from "react-icons/sl";
 import resume from "../files/Shivakrishna_Kosari_Resume.pdf"
 
@@ -36,7 +36,13 @@ const Navbar = () => {
       };
 
 
-      
+      const scrollToSection = (sectionId) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+     
 
 
     return (
@@ -49,22 +55,22 @@ const Navbar = () => {
                 <div >
                     <ul id={styles.nav_links} >
                         <li>
-                            <a href="#home">Home</a>
+                            <a href="#">Home</a>
                         </li>
                         <li>
-                            <a href="#About">About</a>
+                            <a href="#about" onClick={scrollToSection("about")}>About</a>
                         </li>
                         <li>
-                            <a href="#techstacks">Skills</a>
+                            <a href="#techstacks" onClick={scrollToSection("techstacks")}>Skills</a>
                         </li>
                         <li>
-                            <a href="#Projects">Projects</a>
+                            <a href="#projects" onClick={scrollToSection("projects")}>Projects</a>
                         </li>
                         <li>
-                            <a href="#Statistics">Statistics</a>
+                            <a href="#statistics" onClick={scrollToSection("statistics")}>Statistics</a>
                         </li>
                         <li>
-                            <a href="#Contacts">Contacts</a>
+                            <a href="#contacts" onClick={scrollToSection("contacts")}>Contacts</a>
                         </li>
                         <li>
                             <button class="nav-resume-button type1" onClick={handleDownload}>
@@ -91,22 +97,28 @@ const Navbar = () => {
                         />
                         <MenuList width={"200px"} >
                             <MenuItem className='mob-menu' >
-                            <a href="#home">Home</a>
+                                <li>
+                            <a href="#" >Home</a>
+
+                                </li>
                             </MenuItem>
-                            <MenuItem className='mob-menu'>
-                            <a href="#About">About</a>
+                            <MenuItem className='mob-menu' >
+                                <li>
+
+                            <a  href="#about" onClick={scrollToSection("about")} >About</a>
+                                </li>
                             </MenuItem >
                             <MenuItem className='mob-menu' >
-                            <a href="#techstacks">Skills</a>
+                            <a href="#techstacks" onClick={scrollToSection("techstacks")}>Skills</a>
                             </MenuItem>
                             <MenuItem className='mob-menu' >
-                            <a href="#Projects">Projects</a>
+                            <a href="#projects" onClick={scrollToSection("projects")}>Projects</a>
                             </MenuItem>
                             <MenuItem className='mob-menu'>
-                            <a href="#Statistics">Statistics</a>
+                            <a href="#statistics" onClick={scrollToSection("statistics")}>Statistics</a>
                             </MenuItem>
                             <MenuItem className='mob-menu'>
-                            <a href="#Contacts">Contacts</a>
+                            <a href="#contacts" onClick={scrollToSection("contacts")}>Contacts</a>
                             </MenuItem>
                             <MenuItem onClick={handleDownload} className='mob-menu'>
                             Resume

@@ -46,6 +46,8 @@
   letter-spacing: 0.8px;
   letter-spacing: 2px;
   color: #008080;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .menu_icon{
@@ -76,7 +78,15 @@
 
 
 
-
+@media screen and (max-width: 767px){
+  .title_logo {
+    margin-left: 20px;
+  }
+  
+  .title_logo>img {
+    width: 70px;
+  }
+}
 
 
 
@@ -101,5 +111,7 @@
     display: block;
     margin-right: 5%;
   }
+
+
 
 }

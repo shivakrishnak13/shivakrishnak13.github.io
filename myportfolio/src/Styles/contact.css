@@ -283,3 +283,12 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width:454px){
+
+    .details-card>div p{
+        font-size: 0.7rem;
+    }
+    
+   
+}

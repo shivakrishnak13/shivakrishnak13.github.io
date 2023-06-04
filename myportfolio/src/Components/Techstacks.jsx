@@ -104,10 +104,10 @@ const Techstacks = () => {
           <div className="coin Typesscript_logo">
             <div className="side heads">
 
-              <img className='css-logo-width' src={typescript} alt="" />
+              <img className='css-logo-width typescript' src={typescript} alt="typescript" />
             </div>
             <div className="side tails">
-              <img className='css-logo-width' src={typescript} alt="" />
+              <img className='css-logo-width typescript' src={typescript} alt="typescript" />
 
             </div>
           </div>

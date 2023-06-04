@@ -16,7 +16,7 @@ const About = ({ref,func}) => {
       };
 
     return (
-        <div className='About-div' id='About' ref={ref} onScroll={func}>
+        <div className='About-div' id='about' ref={ref} onScroll={func}>
 
             <h1 className='about-me'>About <span style={{ color: "#0e4166" }}>Me</span></h1>
 
