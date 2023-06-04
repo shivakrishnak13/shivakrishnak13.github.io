@@ -19,6 +19,18 @@ const Intro = () => {
   })
 
 
+  const githublink = ()=>{
+    window.open("https://github.com/shivakrishnak13")
+  }
+
+  const emaillink = ()=>{
+    window.location.href = 'mailto:kosarishivakrishna10@gmail.com';
+  }
+
+  const linkedinlink = ()=>{
+    window.open("https://www.linkedin.com/in/shivakrishna-kosari-a16039257/")
+  }
+
 
   return (
     <div className='intro-main'>
@@ -52,15 +64,15 @@ const Intro = () => {
           whileInView={{ opacity: 1 }}
           className='socialamedialogos'>
 
-            <motion.div
+            <motion.div onClick={githublink}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}>
               <FaGithub className='icon-github' />
             </motion.div>
-            <motion.div
+            <motion.div onClick={emaillink}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}><MdAlternateEmail className='icon-email' /></motion.div>
-            <motion.div
+            <motion.div onClick={linkedinlink}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}><AiFillLinkedin className='icon-linkedin' /></motion.div>
 

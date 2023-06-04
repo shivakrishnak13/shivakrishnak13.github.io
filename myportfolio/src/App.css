@@ -10,6 +10,7 @@
     overflow: hidden;
     bottom: 5px;
     transition: all 0.5s ease-in-out;
+    margin-left: 20px;
   }
   
   .nav-resume-button:hover {
@@ -57,6 +58,69 @@
   }
   
   .type1:hover::before {
+    transform: translateY(-50px) scale(0) rotate(120deg);
+  }
+
+
+.active-nav-resume-button {
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    bottom: 5px;
+    transition: all 0.5s ease-in-out;
+    margin-left: 20px;
+    box-shadow: .5px .5px 150px #252525;
+  }
+  
+  .active-nav-resume-button:hover {
+    box-shadow: .5px .5px 150px #252525;
+  }
+  
+  .active-type1::after {
+    content: "Thanks 🤝";
+    height: 30px;
+    width: 100px;
+    background-color: #0E4166;
+    color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(50px);
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .active-type1::before {
+    content: "⬇️ Resume";
+    height: 30px;
+    width: 100px;
+    background-color: #fff;
+    color: #008080;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(0px) scale(1.2);
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .active-type1:hover::after {
+    transform: translateY(0) scale(1.2);
+  }
+  
+  .active-type1:hover::before {
     transform: translateY(-50px) scale(0) rotate(120deg);
   }
 
@@ -121,3 +185,5 @@ background: linear-gradient(90deg, rgba(99,192,211,1) 28%, rgba(58,125,206,1) 10
   .mob-menu>a{
     color: #a8dff1;
   }
+
+ 

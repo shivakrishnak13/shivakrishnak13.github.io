@@ -9,6 +9,7 @@ import ScrollToTopButton from './Components/Scroll';
 import Statistics from './Components/Statistics';
 import Techstacks from './Components/Techstacks';
 import Footer from './Components/Footer';
+import Nav from './Components/Nav';
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
   return (
     <div className="App">
       
-     <Navbar/>
+     <Nav/>
      <Intro/>
      <About ref={divRef} func={handleScroll}/>
      <Techstacks/>

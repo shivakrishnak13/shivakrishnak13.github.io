@@ -256,5 +256,8 @@
     width: 4rem;
     margin-top: -17px;
   }
-
+.typescript{
+  width: 3rem;
+  border-radius: 1rem;
+}
 }

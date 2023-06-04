@@ -6,8 +6,17 @@ import {MdLocationOn} from "react-icons/md";
 
 
 const Contactme = () => {
+
+    const handleButtonClick = () => {
+        const phoneNumber = '9440997107'; // Replace with the desired phone number
+        window.location.href = `tel:${phoneNumber}`;
+      };
+      const emaillink = ()=>{
+        window.location.href = 'mailto:kosarishivakrishna10@gmail.com';
+      }
+
     return (
-        <div className='Contact-maindiv' id='Contacts'>
+        <section className='Contact-maindiv' id='contacts'>
             <div className='heading-div'>
                 <button className='heading-textbtn'>
                     <h1 className='mainheading'>Contact <span style={{ color: "#0e4166" }}>Me</span></h1>
@@ -19,7 +28,7 @@ const Contactme = () => {
                 {/* contact details */}
                 <div className='contact-details'>
                     <div className="details-cards">
-                        <div className="details-card red">
+                        <div className="details-card red" onClick={handleButtonClick}>
                             <div>
                                 <div>
                                 <BsFillTelephoneFill className='contact-icon'/>
@@ -36,7 +45,7 @@ const Contactme = () => {
                                 <p>Jagtial, Telangana</p>
                             </div>
                         </div>
-                        <div className="details-card green">
+                        <div className="details-card green" onClick={emaillink}>
                             <div>
                                 <div>
 
@@ -87,7 +96,7 @@ const Contactme = () => {
 
 
 
-        </div>
+        </section>
     )
 }
 
