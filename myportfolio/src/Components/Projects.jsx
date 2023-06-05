@@ -60,7 +60,7 @@ const fashionvercegithublink = ()=>{
 
             {/* stylespot project */}
 
-            <div className="card">
+            <div className="card project-card">
                <div>
                   <img className='projectimage' src={stylespot} alt="stylespot" />
                   <div className='btnhover'>
@@ -165,7 +165,7 @@ const fashionvercegithublink = ()=>{
 
             {/* Megatmart Project */}
 
-            <div className="card">
+            <div className="card project-card">
                <div>
                   <img className='projectimage' src={megamart} alt="megamart" />
                   <div className='btnhover'>
@@ -263,7 +263,7 @@ const fashionvercegithublink = ()=>{
 
             {/* fashion Kart */}
 
-            <div className="card">
+            <div className="card project-card">
                <div>
                   <img className='projectimage' src={fashionkart} alt="fashionkart" />
                   <div className='btnhover'>
@@ -354,7 +354,7 @@ const fashionvercegithublink = ()=>{
             {/* fashionverce */}
 
 
-            <div className="card">
+            <div className="card project-card">
                <div>
                   <img className='projectimage' src={fashionverce} alt="fashionverce" />
                   <div className='btnhover'>

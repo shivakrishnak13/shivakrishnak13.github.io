@@ -55,22 +55,22 @@ const Nav = () => {
           </div>
           <ul className={`menu ${isActive ? 'active' : ''}`}>
             <li>
-              <a href="#" className="menu-btn active nav-link home" id="home"  onClick={closemenu}>
+              <a href="#" className="menu-btn active nav-link home"   onClick={closemenu}>
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" className="menu-btn active nav-link about" id="about"  onClick={closemenu}>
+              <a href="#about" className="menu-btn active nav-link about"   onClick={closemenu}>
                 About
               </a>
             </li>
             <li>
-              <a href="#skills" className="menu-btn active nav-link skills" id="skills" onClick={closemenu}>
+              <a href="#skills" className="menu-btn active nav-link skills"  onClick={closemenu}>
                 Skills
               </a>
             </li>
             <li>
-              <a href="#projects" id="projects" className="menu-btn active nav-link projects" onClick={closemenu}>
+              <a href="#projects"  className="menu-btn active nav-link projects" onClick={closemenu}>
                 Projects
               </a>
             </li>
@@ -78,7 +78,7 @@ const Nav = () => {
               <a href="#statistics" className="menu-btn active" onClick={closemenu}>Statistics</a>
             </li>
             <li>
-              <a href="#contact"  id="contact" className="menu-btn active nav-link contact" onClick={closemenu}>
+              <a href="#contact" className="menu-btn active nav-link contact" onClick={closemenu}>
                 Contact
               </a>
             </li>

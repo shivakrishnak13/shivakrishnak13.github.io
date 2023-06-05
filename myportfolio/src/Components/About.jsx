@@ -17,7 +17,7 @@ const About = ({ref,func}) => {
       };
 
     return (
-        <div className='About-div' id='about' ref={ref} onScroll={func}>
+        <div className='About-div about section' id='about' ref={ref} onScroll={func}>
 
             <h1 className='about-me'>About <span style={{ color: "#0e4166" }}>Me</span></h1>
 
@@ -25,8 +25,8 @@ const About = ({ref,func}) => {
                 <div>
                 <img className='home-img' src={myphoto} alt="myimage" />
                 </div>
-                <div id="user-detail-intro">
-                    <p>Experienced and enthusiastic web developer with over 1000 hours of coding experience and a strong background in data structures and algorithms (100+ hours). Skilled in front-end and back-end development, utilizing technologies such as ReactJS, TypeScript, Node.js, JavaScript, ExpressJS, and MongoDB. Developed clones of popular websites and successfully collaborated on projects with teams. Highly disciplined, motivated, and a problem solver.</p>
+                <div >
+                    <p id="user-detail-intro">Experienced and enthusiastic web developer with over 1000 hours of coding experience and a strong background in data structures and algorithms (100+ hours). Skilled in front-end and back-end development, utilizing technologies such as ReactJS, TypeScript, Node.js, JavaScript, ExpressJS, and MongoDB. Developed clones of popular websites and successfully collaborated on projects with teams. Highly disciplined, motivated, and a problem solver.</p>
 
 
 

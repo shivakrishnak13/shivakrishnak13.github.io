@@ -29,17 +29,17 @@ const Statistics = () => {
         </div>
         <div className="git-box">
           <div>
-            <img className="github-stats-card"
+            <img className="github-stats-card" id="github-stats-card"
               src="https://github-readme-stats.vercel.app/api?username=shivakrishnak13&count_private=true&theme=vue-dark"
               alt="stat-card" />
           </div>
           <div>
-            <img className="github-top-langs"
+            <img className="github-top-langs" id="github-top-langs"
               src="https://github-readme-stats.vercel.app/api/top-langs/?username=shivakrishnak13&lans-count=3&show_icons=true&theme=vue-dark"
               alt="top_languages" />
           </div>
           <div>
-            <img className="github-streak-stats"
+            <img className="github-streak-stats" id="github-streak-stats"
               src="https://github-readme-streak-stats.herokuapp.com?user=shivakrishnak13&theme=vue-dark&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
               alt="streakstat" />
           </div>
