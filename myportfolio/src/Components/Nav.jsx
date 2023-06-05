@@ -39,37 +39,38 @@ const Nav = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = resume;
-    link.setAttribute('download', 'resume.pdf');
+    link.setAttribute('download', 'resume-link-1');
+    link.setAttribute('id', 'resume.pdf');
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
   return (
-    <div className='navdiv'>
-      <nav className={navbg ? "activenavbar" : "navbar"} id="nav-menu">
+    <div className='navdiv' id="nav-menu">
+      <nav className={navbg ? "activenavbar" : "navbar"} id="nav-menu" >
         <div className="max-width">
           <div className="title_logo">
           <img src={logo} alt="logo" />
           </div>
           <ul className={`menu ${isActive ? 'active' : ''}`}>
             <li>
-              <a href="#" className="menu-btn active" onClick={closemenu}>
+              <a href="#" className="menu-btn active nav-link home" id="home"  onClick={closemenu}>
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" className="menu-btn active" onClick={closemenu}>
+              <a href="#about" className="menu-btn active nav-link about" id="about"  onClick={closemenu}>
                 About
               </a>
             </li>
             <li>
-              <a href="#techstacks" className="menu-btn active" onClick={closemenu}>
+              <a href="#skills" className="menu-btn active nav-link skills" id="skills" onClick={closemenu}>
                 Skills
               </a>
             </li>
             <li>
-              <a href="#projects" className="menu-btn active" onClick={closemenu}>
+              <a href="#projects" id="projects" className="menu-btn active nav-link projects" onClick={closemenu}>
                 Projects
               </a>
             </li>
@@ -77,11 +78,11 @@ const Nav = () => {
               <a href="#statistics" className="menu-btn active" onClick={closemenu}>Statistics</a>
             </li>
             <li>
-              <a href="#contacts" className="menu-btn active" onClick={closemenu}>
+              <a href="#contact"  id="contact" className="menu-btn active nav-link contact" onClick={closemenu}>
                 Contact
               </a>
             </li>
-            <li id="resume-button-1">
+            <li id="resume-button-1" className='nav-link resume'>
               <button class={navbg? "active-nav-resume-button active-type1":"nav-resume-button type1"} onClick={handleDownload}>
 
               </button>

@@ -269,4 +269,7 @@
   .activenavbar {
     padding: 0 30px 0 30px;
   }
+  .title_logo>img {
+    width: 70px;
+  }
 }
