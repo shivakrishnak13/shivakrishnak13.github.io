@@ -33,7 +33,7 @@ const Intro = () => {
 
 
   return (
-    <div className='intro-main'>
+    <div className='intro-main' id="home">
       <div className='intro-main-img-div'>
         <Svgwave />
         <div className='intro-main-text-div'>
@@ -42,7 +42,7 @@ const Intro = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}>
-            <h1 className='nameh1tag'><span style={{ color: "#B5D9EB" }}>Hi, I'm </span>
+            <h1 className='nameh1tag' id="user-detail-name"><span style={{ color: "#B5D9EB" }}>Hi, I'm </span>
               Shivakrishna Kosari</h1>
 
 

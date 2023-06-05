@@ -16,7 +16,7 @@ const Contactme = () => {
       }
 
     return (
-        <section className='Contact-maindiv' id='contacts'>
+        <section className='Contact-maindiv' id='contact'>
             <div className='heading-div'>
                 <button className='heading-textbtn'>
                     <h1 className='mainheading'>Contact <span style={{ color: "#0e4166" }}>Me</span></h1>
@@ -30,7 +30,7 @@ const Contactme = () => {
                     <div className="details-cards">
                         <div className="details-card red" onClick={handleButtonClick}>
                             <div>
-                                <div>
+                                <div id="contact-phone">
                                 <BsFillTelephoneFill className='contact-icon'/>
                                 </div>
                                 <p>9440997107</p>
@@ -45,9 +45,9 @@ const Contactme = () => {
                                 <p>Jagtial, Telangana</p>
                             </div>
                         </div>
-                        <div className="details-card green" onClick={emaillink}>
+                        <div className="details-card green" onClick={emaillink} id="contact-email">
                             <div>
-                                <div>
+                                <div >
 
                                 <HiMail className='contact-icon' />
                                 </div>
