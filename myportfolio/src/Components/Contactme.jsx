@@ -30,10 +30,10 @@ const Contactme = () => {
                     <div className="details-cards">
                         <div className="details-card red" onClick={handleButtonClick}>
                             <div>
-                                <div id="contact-phone">
+                                <div >
                                 <BsFillTelephoneFill className='contact-icon'/>
                                 </div>
-                                <p>9440997107</p>
+                                <p id="contact-phone">+91 9440997107</p>
                             </div>
                         </div>
                         <div className="details-card blue">

@@ -64,15 +64,15 @@ const Intro = () => {
           whileInView={{ opacity: 1 }}
           className='socialamedialogos'>
 
-            <motion.div onClick={githublink}
+            <motion.div onClick={githublink} id="contact-github"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}>
               <FaGithub className='icon-github' />
             </motion.div>
-            <motion.div onClick={emaillink}
+            <motion.div onClick={emaillink} id="contact-email"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}><MdAlternateEmail className='icon-email' /></motion.div>
-            <motion.div onClick={linkedinlink}
+            <motion.div onClick={linkedinlink}  id="contact-linkedin"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}><AiFillLinkedin className='icon-linkedin' /></motion.div>
 
