@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8ed8bd55.css",
-    "main.js": "/static/js/main.602e8177.js",
+    "main.js": "/static/js/main.03003b03.js",
     "static/js/787.1f11dfe9.chunk.js": "/static/js/787.1f11dfe9.chunk.js",
     "static/media/stylespot image.png": "/static/media/stylespot image.eda47f0273244a579219.png",
     "static/media/fashion kart.png": "/static/media/fashion kart.e69eb930eef91f3b3e5b.png",
@@ -9,7 +9,7 @@
     "static/media/devloperLogo.svg": "/static/media/devloperLogo.4ccaed63462142b961fad2ff6c869879.svg",
     "static/media/fashionVerce.png": "/static/media/fashionVerce.5cee801c34f0dfc15c77.png",
     "static/media/myphoto.png": "/static/media/myphoto.11cb0f676f645827a28b.png",
-    "static/media/Shivakrishna_Kosari_Resume.pdf": "/static/media/Shivakrishna_Kosari_Resume.299e004b627505c26368.pdf",
+    "static/media/Shivakrishna_Kosari_Resume.pdf": "/static/media/Shivakrishna_Kosari_Resume.0f1118b1297410c57543.pdf",
     "static/media/k.png": "/static/media/k.88f8cf92953a2a868fed.png",
     "static/media/vercel-seeklogo.com.svg": "/static/media/vercel-seeklogo.com.909054213023bf7802ac2cdccd861157.svg",
     "static/media/icons8-node-js.svg": "/static/media/icons8-node-js.436ff3953a68d5c10f48f4fa57530016.svg",
@@ -25,11 +25,11 @@
     "static/media/icons8-chakra-ui.svg": "/static/media/icons8-chakra-ui.3cc0dcf33272ae6294329e6a24f995e9.svg",
     "static/media/icons8-html.svg": "/static/media/icons8-html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "main.8ed8bd55.css.map": "/static/css/main.8ed8bd55.css.map",
-    "main.602e8177.js.map": "/static/js/main.602e8177.js.map",
+    "main.03003b03.js.map": "/static/js/main.03003b03.js.map",
     "787.1f11dfe9.chunk.js.map": "/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8ed8bd55.css",
-    "static/js/main.602e8177.js"
+    "static/js/main.03003b03.js"
   ]
 }
