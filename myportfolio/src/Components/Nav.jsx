@@ -39,8 +39,8 @@ const Nav = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = resume;
-    link.setAttribute('download', 'resume-link-1');
-    link.setAttribute('id', 'resume.pdf');
+    link.setAttribute('download', 'resume.pdf');
+    link.setAttribute('id', 'resume-link-1');
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
