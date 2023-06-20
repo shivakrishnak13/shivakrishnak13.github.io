@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8ed8bd55.css",
-    "main.js": "/static/js/main.5523a9bc.js",
+    "main.js": "/static/js/main.1542a756.js",
     "static/js/787.1f11dfe9.chunk.js": "/static/js/787.1f11dfe9.chunk.js",
     "static/media/stylespot image.png": "/static/media/stylespot image.eda47f0273244a579219.png",
     "static/media/fashion kart.png": "/static/media/fashion kart.e69eb930eef91f3b3e5b.png",
@@ -25,11 +25,11 @@
     "static/media/icons8-chakra-ui.svg": "/static/media/icons8-chakra-ui.3cc0dcf33272ae6294329e6a24f995e9.svg",
     "static/media/icons8-html.svg": "/static/media/icons8-html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "main.8ed8bd55.css.map": "/static/css/main.8ed8bd55.css.map",
-    "main.5523a9bc.js.map": "/static/js/main.5523a9bc.js.map",
+    "main.1542a756.js.map": "/static/js/main.1542a756.js.map",
     "787.1f11dfe9.chunk.js.map": "/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8ed8bd55.css",
-    "static/js/main.5523a9bc.js"
+    "static/js/main.1542a756.js"
   ]
 }
