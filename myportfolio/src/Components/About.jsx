@@ -1,15 +1,18 @@
 import React from 'react';
 import "../Styles/about.css";
 import myphoto from "../Images/myphoto.png"
-import resume from "../files/Shivakrishna_Kosari_Resume.pdf"
+import Shivakrishna_Kosari_Resume from "../files/Shivakrishna_Kosari_Resume.pdf"
 
 
 const About = ({ref,func}) => {
 
+
+
     const handleDownload = () => {
+        window.open("https://drive.google.com/file/d/11eCVTWwZ7pFxIctWQzDJAQ2W-kjLPj8V/view");
         const link = document.createElement('a');
-        link.href = resume;
-        link.setAttribute('download', 'resume.pdf');
+        link.href = Shivakrishna_Kosari_Resume;
+        link.setAttribute('download', 'Shivakrishna_Kosari_Resume.pdf');
         link.setAttribute('id', 'resume-link-2');
         document.body.appendChild(link);
         link.click();

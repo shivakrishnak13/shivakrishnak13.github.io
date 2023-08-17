@@ -2,7 +2,7 @@ import React from 'react'
 import "../Styles/nav.css"
 import { useState } from 'react';
 import logo from "../Images/k.png"
-import resume from "../files/Shivakrishna_Kosari_Resume.pdf"
+import Shivakrishna_Kosari_Resume from "../files/Shivakrishna_Kosari_Resume.pdf"
 
 
 
@@ -37,10 +37,11 @@ const Nav = () => {
   }
 
   const handleDownload = () => {
+    window.open("https://drive.google.com/file/d/11eCVTWwZ7pFxIctWQzDJAQ2W-kjLPj8V/view");
     const link = document.createElement('a');
-    link.href = resume;
-    link.setAttribute('download', 'resume-link-1');
-    link.setAttribute('id', 'resume.pdf');
+    link.href = Shivakrishna_Kosari_Resume;
+    link.setAttribute('download', 'Shivakrishna_Kosari_Resume');
+    link.setAttribute('id', 'resume-link-1');
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
