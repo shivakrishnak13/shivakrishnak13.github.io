@@ -39,6 +39,7 @@ const Nav = () => {
   const handleDownload = () => {
     window.open("https://drive.google.com/file/d/11eCVTWwZ7pFxIctWQzDJAQ2W-kjLPj8V/view");
     const link = document.createElement('a');
+
     link.href = Shivakrishna_Kosari_Resume;
     link.setAttribute('download', 'Shivakrishna_Kosari_Resume');
     link.setAttribute('id', 'resume-link-1');
