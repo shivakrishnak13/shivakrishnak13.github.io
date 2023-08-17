@@ -18,10 +18,10 @@ import { VscLiveShare } from "react-icons/vsc";
 const Projects = () => {
 
 const stylespotlink = ()=>{
-   window.open("https://stylespot.vercel.app/");
+   window.open("https://style-spot-dusky.vercel.app/");
 }
 const stylespotgithublink = ()=>{
-   window.open("https://github.com/shivakrishnak13/StyleSpot");
+   window.open("https://github.com/shivakrishnak13/stylespot_project");
 }
 
 const megamartlink = ()=>{
