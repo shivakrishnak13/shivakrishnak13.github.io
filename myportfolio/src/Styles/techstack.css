@@ -213,6 +213,11 @@
   padding: 3px;
 }
 
+.logo_spin{
+  width: 90px;
+  height: 90px;
+}
+
 @media screen and (min-width:861px) and (max-width:1229px){
   
 
@@ -220,6 +225,11 @@
     width: 80%;
   }
 
+
+  .logo_spin{
+    width: 80px;
+    height: 80px;
+  }
 
 
 }
@@ -233,7 +243,10 @@
     /* border: 1px solid red; */
     padding-left: 135px;
   }
-
+  .logo_spin{
+    width: 70px;
+    height: 70px;
+  }
 
 }
 
@@ -260,5 +273,9 @@
 .typescript{
   width: 3rem;
   border-radius: 1rem;
+}
+.logo_spin{
+  width: 40px;
+  height: 40px;
 }
 }
