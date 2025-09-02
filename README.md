@@ -1,56 +1,75 @@
-# Shivakrishna - Full Stack Web Developer Portfolio 
+# Shivakrishna - Frontend Developer Portfolio  
 
-## Introduction
+## 👋 Introduction  
 
-Hello! I'm Shivakrishna, a Full Stack Web Developer from Telangana, with a Bachelor of Science degree in MStcs from Ramakrishna Degree College, Satavahana University, Karimnagar (2022). I am passionate about coding and web development, and I believe technology has the potential to transform society.
+Hello! I'm **Shivakrishna**, a Frontend Developer from Telangana, with a Bachelor of Science degree in **Mathematics, Statistics, and Computer Science (MStCs)** from **Ramakrishna Degree College, Satavahana University, Karimnagar (2022)**.  
 
-## Education
+I am passionate about coding and web development. I believe technology has the power to transform society, and I enjoy building scalable, user-friendly applications that make an impact.  
 
-- Bachelor of Science in MStcs - Ramakrishna Degree College, Satavahana University, Karimnagar (2022)
+---
 
-## Professional Training
+## 🎓 Education  
 
-I further honed my web development skills by enrolling in the full-time 30-week Full Stack Web Development program offered by Masai School. During this program, I gained hands-on experience in both front-end and back-end technologies. Some of the technologies I am proficient in include:
+- **Bachelor of Science (MStCs)** – Ramakrishna Degree College, Satavahana University, Karimnagar (2022)  
+- **Full Stack Web Development (Full-Time, 30 weeks)** – Masai School, Bangalore (2022–2023)  
 
-- React
-- MongoDB
-- Express
-- Node.js
-- TypeScript
-- Redux
-- React-Redux
-- React Testing
-- Cypress
-- Vercel
-- Netlify
-- VSCode
-- Cyclic
+---
 
-## Projects
+## 💼 Professional Experience  
 
-### indiamart.com (Clone)
+### **Revent AI** (Oct 2023 – Present)  
+**Junior → Senior Frontend Developer** | Remote  
 
-- Features: Authentication, Filter, Routing, Login, Signup, Add to Cart
-- Description: An individual project completed in 5 days. It is a full-fledged e-commerce website that enables consumers to directly purchase goods or services from sellers.
-- Tech-Stack: React, Chakra-UI, Mockapi, JSON
+At Revent AI, I have worked across **three different frontend applications** and contributed to key product features:  
 
-### flipkart.com (Clone)
+- 🖼️ **React TypeScript (Dashboard App)**: Built dashboards for handling **presentations, themes, and user accounts**. Used **Redux Toolkit** for state management and **Material-UI** for styling.  
+- 🎨 **Vue TypeScript (Canvas App)**: Developed an editable **presentation canvas** using **Fabric.js**, added new features, and resolved bugs. Managed state using **Pinia Store** and styled with **SCSS**.  
+- 🌐 **Next.js (SEO Application)**: Built an SEO-focused application with blogs (Hindi & English), feature explanation pages, meta tags, Google reCAPTCHA, and **JSON-LD schema** for search optimization.  
 
-- Features: Filter, Sorting, Login, Signup, Admin Panel, Cart Page, Payment Page
-- Description: A collaborative project developed within 5 days, with a team of 5. The website replicates the functionalities of Flipkart.com, an Indian e-commerce company offering a wide range of products and services online.
-- Tech-Stack: HTML, CSS, JavaScript, JSON
-- Area of responsibility:
-  - Developed the Signup Page & Login Page With OTP verification
-  - Developed the Payment Page
+Other key contributions:  
+- Developed **Node.js + Express.js APIs** to convert PowerPoint XML to JSON and export back to PPT.  
+- Integrated advanced features like **Doc-to-PPT**, **Prompt-to-PPT**, and created an interactive **app tour using Joyride**.  
+- Efficiently resolved bugs across multiple applications and collaborated closely with cross-functional teams.  
+- Promoted to **Senior Frontend Developer (May 2025)** for ownership of complex features and consistent delivery.  
 
-## Hobbies and Interests
+---
 
-Apart from coding, I enjoy watching movies in my leisure time. Additionally, I love playing outdoor sports, with cricket being one of my favorites.
+## 🛠️ Technical Skills  
 
-## Contact Information
+**Frontend:** React.js, Next.js, Vue.js, TypeScript, JavaScript, Redux Toolkit, Pinia, HTML5, CSS3  
+**Styling:** Material-UI, Chakra UI, SCSS  
+**Backend:** Node.js, Express.js  
+**Tools:** Git, Figma, Vite, Webpack  
+**Soft Skills:** Team Collaboration, Problem Solving, Adaptability  
 
-- Email: kosarishivakrishna10@gmail.com
-- GitHub: https://github.com/shivakrishnak13
-- LinkedIn: https://www.linkedin.com/in/shivakrishna-kosari-a16039257/
+---
 
-Thank you for visiting my portfolio. I am enthusiastic about web development and believe in its power to make a positive impact. If you have any questions or would like to collaborate, please don't hesitate to reach out to me.
+## 🚀 Projects  
+
+### [MegaMart (E-commerce Clone)](https://megamart.vercel.app/)  
+
+- **Features:** Authentication, Filtering, Add-to-Cart, Payment Flow  
+- **Description:** An individual project completed in 5 days. A full-fledged e-commerce website where users can browse and purchase products.  
+- **Tech Stack:** React, Chakra UI, MockAPI  
+
+---
+
+## 🎯 Hobbies & Interests  
+
+- Watching movies 🎬  
+- Playing cricket 🏏  
+- Exploring new technologies 💡  
+
+---
+
+## 📬 Contact  
+
+- **Email:** kosarishivakrishna10@gmail.com  
+- **GitHub:** [shivakrishnak13](https://github.com/shivakrishnak13)  
+- **LinkedIn:** [Shivakrishna Kosari](https://www.linkedin.com/in/shivakrishna-kosari-a16039257/)  
+- **Portfolio:** [shivakrishnak13.github.io](https://shivakrishnak13.github.io)  
+
+---
+
+✨ Thank you for visiting my portfolio!  
+I am enthusiastic about web development and always open to learning and collaborating. Feel free to connect with me for opportunities or discussions.  
