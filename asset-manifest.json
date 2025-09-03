@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1f3ba127.css",
-    "main.js": "/static/js/main.18af0a59.js",
+    "main.css": "/static/css/main.b6603050.css",
+    "main.js": "/static/js/main.332d965c.js",
     "static/js/787.1f11dfe9.chunk.js": "/static/js/787.1f11dfe9.chunk.js",
     "static/media/stylespot image.png": "/static/media/stylespot image.eda47f0273244a579219.png",
     "static/media/fashion kart.png": "/static/media/fashion kart.e69eb930eef91f3b3e5b.png",
@@ -11,10 +11,9 @@
     "static/media/cartrade.png": "/static/media/cartrade.01b1d159f29a2beb2190.png",
     "static/media/eduhub.png": "/static/media/eduhub.34ab03a665ae7da10845.png",
     "static/media/myphoto.png": "/static/media/myphoto.f5647c9c12ca81a3ca78.png",
-    "static/media/Shivakrishna_Kosari_Resume.pdf": "/static/media/Shivakrishna_Kosari_Resume.0f1118b1297410c57543.pdf",
-    "static/media/k.png": "/static/media/k.88f8cf92953a2a868fed.png",
+    "static/media/Shivakrishna_Kosari_Resume.pdf": "/static/media/Shivakrishna_Kosari_Resume.8ab8ac8411497765a860.pdf",
     "static/media/MySQL.svg": "/static/media/MySQL.31ad00b59b236f7485d650f738433054.svg",
-    "static/media/vercel-seeklogo.com.svg": "/static/media/vercel-seeklogo.com.909054213023bf7802ac2cdccd861157.svg",
+    "static/media/vercel-seeklogo.com.svg": "/static/media/vercel-seeklogo.com.e45a29fb833a9cee6001d1cf2527e962.svg",
     "static/media/python.svg": "/static/media/python.955545708171fabfceae9f1a2fb0d102.svg",
     "static/media/icons8-node-js.svg": "/static/media/icons8-node-js.436ff3953a68d5c10f48f4fa57530016.svg",
     "static/media/icons8-react-native.svg": "/static/media/icons8-react-native.21b5daa594e0977b3ac254df4795c98a.svg",
@@ -22,19 +21,19 @@
     "static/media/Angular.svg": "/static/media/Angular.526863fceb93af2edd890f8a8aba6589.svg",
     "static/media/icons8-github (1).svg": "/static/media/icons8-github (1).c566cf35aa8485e32937a0b5838d93ae.svg",
     "static/media/icons8-express-js.svg": "/static/media/icons8-express-js.7ec48f7d4cfdbe432347f0f71730d6a2.svg",
-    "static/media/typescript-logo-svgrepo-com.svg": "/static/media/typescript-logo-svgrepo-com.dadf0de0427e9c2543c97c7ae2cf2b5d.svg",
+    "static/media/typescript-logo-svgrepo-com.svg": "/static/media/typescript-logo-svgrepo-com.7295d67a82e1605752e4457327130a7d.svg",
     "static/media/icons8-javascript.svg": "/static/media/icons8-javascript.081325c6f229605dce15142ddd948d6d.svg",
     "static/media/icons8-visual-studio-code-2019.svg": "/static/media/icons8-visual-studio-code-2019.a227f2b476a9693602ccb65ede4ea460.svg",
     "index.html": "/index.html",
     "static/media/icons8-css.svg": "/static/media/icons8-css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/icons8-chakra-ui.svg": "/static/media/icons8-chakra-ui.3cc0dcf33272ae6294329e6a24f995e9.svg",
     "static/media/icons8-html.svg": "/static/media/icons8-html.c1bb84e022ca9d76984d4b943bd678fd.svg",
-    "main.1f3ba127.css.map": "/static/css/main.1f3ba127.css.map",
-    "main.18af0a59.js.map": "/static/js/main.18af0a59.js.map",
+    "main.b6603050.css.map": "/static/css/main.b6603050.css.map",
+    "main.332d965c.js.map": "/static/js/main.332d965c.js.map",
     "787.1f11dfe9.chunk.js.map": "/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f3ba127.css",
-    "static/js/main.18af0a59.js"
+    "static/css/main.b6603050.css",
+    "static/js/main.332d965c.js"
   ]
 }
