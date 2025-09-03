@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 
 const Footer = () => {
   const open = (url) => window.open(url, '_blank')
-  const sendMail = () => window.location.href = 'mailto:kosarishivakrishna10@gmail.com'
+  const sendMail = () => window.location.href = 'mailto:shivakrishna.codes@gmail.com'
 
   return (
     <footer className='footer-div'>

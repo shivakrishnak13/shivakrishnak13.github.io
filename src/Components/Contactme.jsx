@@ -26,9 +26,9 @@ const ContactMe = () => {
     {
       id: 'email',
       title: 'Email',
-      value: 'kosarishivakrishna10@gmail.com',
+      value: 'shivakrishna.codes@gmail.com',
       icon: <HiMail />,
-      action: () => window.location.href = 'mailto:kosarishivakrishna10@gmail.com',
+      action: () => window.location.href = 'mailto:shivakrishna.codes@gmail.com',
       clickable: true
     }
   ];
@@ -105,7 +105,7 @@ const ContactMe = () => {
 
           <form 
             className='contact-form' 
-            action="https://formsubmit.co/kosarishivakrishna10@gmail.com" 
+            action="https://formsubmit.co/shivakrishna.codes@gmail.com" 
             method="POST"
             onSubmit={handleSubmit}
           >

@@ -24,7 +24,7 @@ const Intro = () => {
   }
 
   const emaillink = ()=>{
-    window.location.href = 'mailto:kosarishivakrishna10@gmail.com';
+    window.location.href = 'mailto:shivakrishna.codes@gmail.com';
   }
 
   const linkedinlink = ()=>{
