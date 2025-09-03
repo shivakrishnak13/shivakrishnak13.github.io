@@ -1,12 +1,14 @@
 import { useRef } from 'react';
 import './App.css';
 import About from './Components/About';
+import Experience from './Components/Experience';
 import ContactForm from './Components/Contactme';
 import Intro from './Components/Intro';
 import Projects from './Components/Projects';
 import ScrollToTopButton from './Components/Scroll';
 import Statistics from './Components/Statistics';
 import Techstacks from './Components/Techstacks';
+import SkillsModern from './Components/SkillsModern';
 import Footer from './Components/Footer';
 import Nav from './Components/Nav';
 import Social from './Components/Social';
@@ -30,7 +32,8 @@ function App() {
       <Nav />
       <Intro />
       <About ref={divRef} func={handleScroll} />
-      <Techstacks />
+      <Experience />
+      <SkillsModern />
       <Projects />
       <Statistics />
       <ContactForm />
