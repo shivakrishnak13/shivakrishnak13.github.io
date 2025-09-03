@@ -64,7 +64,7 @@ Other key contributions:
 
 ## 📬 Contact  
 
-- **Email:** kosarishivakrishna10@gmail.com  
+- **Email:** shivakrishna.codes@gmail.com  
 - **GitHub:** [shivakrishnak13](https://github.com/shivakrishnak13)  
 - **LinkedIn:** [Shivakrishna Kosari](https://www.linkedin.com/in/shivakrishna-kosari-a16039257/)  
 - **Portfolio:** [shivakrishnak13.github.io](https://shivakrishnak13.github.io)  
