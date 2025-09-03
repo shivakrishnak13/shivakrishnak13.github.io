@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --primary-color: #0e4166;
+  --primary-light: rgba(14, 65, 102, 0.1);
+  --primary-gradient: linear-gradient(135deg, #0e4166, #1a5a7a);
+  --accent-gradient: linear-gradient(135deg, #3F9190, #3E9BCC);
+  --text-dark: #1a202c;
+  --text-light: #4a5568;
+  --text-muted: #607d8b;
+  --white: #ffffff;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --success: #10b981;
+  --success-light: rgba(16, 185, 129, 0.1);
+  --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.1);
+  --shadow-heavy: 0 12px 40px rgba(0, 0, 0, 0.15);
+  --border-radius: 16px;
+  --border-radius-large: 24px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --max-width: 1200px;
+}
+
+.experience-section {
+  padding: 5rem 1rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  background: linear-gradient(135deg, var(--gray-50) 0%, var(--white) 100%);
+}
+
+.experience-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.experience-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0;
+  position: relative;
+  display: inline-block;
+}
+
+.experience-title-accent {
+  color: var(--primary-color);
+  position: relative;
+}
+
+.experience-title-accent::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--primary-gradient);
+  border-radius: 2px;
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% { opacity: 1; box-shadow: 0 0 10px rgba(14, 65, 102, 0.3); }
+  50% { opacity: 0.8; box-shadow: 0 0 20px rgba(14, 65, 102, 0.5); }
+}
+
+.experience-summary {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.summary-item {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-light);
+  border: 1px solid var(--gray-200);
+  text-align: center;
+  min-width: 200px;
+  transition: var(--transition);
+}
+
+.summary-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-medium);
+  border-color: var(--primary-color);
+}
+
+.summary-value {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0 0 0.25rem 0;
+}
+
+.summary-label {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin: 0;
+  font-weight: 500;
+}
+
+.experience-timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--primary-gradient);
+  border-radius: 1px;
+}
+
+.experience-item {
+  background: var(--white);
+  border-radius: var(--border-radius-large);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-medium);
+  border: 1px solid var(--gray-200);
+  position: relative;
+  transition: var(--transition);
+}
+
+.experience-item::before {
+  content: '';
+  position: absolute;
+  left: -2.5rem;
+  top: 2rem;
+  width: 12px;
+  height: 12px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  border: 3px solid var(--white);
+  box-shadow: var(--shadow-light);
+}
+
+.experience-item.current::before {
+  background: var(--success);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.8; }
+}
+
+.experience-item:hover {
+  transform: translateX(8px);
+  box-shadow: var(--shadow-heavy);
+  border-color: var(--primary-color);
+}
+
+.experience-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.experience-details {
+  flex: 1;
+}
+
+.company-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0 0 0.5rem 0;
+}
+
+.role-progression {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.role-tag {
+  background: var(--primary-light);
+  color: var(--primary-color);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(14, 65, 102, 0.2);
+}
+
+.role-tag.current {
+  background: var(--success-light);
+  color: var(--success);
+  border-color: var(--success);
+}
+
+.role-tag.promoted {
+  background: var(--accent-gradient);
+  color: var(--white);
+  border: none;
+}
+
+.company-info {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.experience-duration {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.duration-main {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin: 0 0 0.25rem 0;
+}
+
+.duration-details {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.experience-achievements {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--gray-50);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+  transition: var(--transition);
+}
+
+.achievement-item:hover {
+  background: var(--white);
+  border-left-color: var(--success);
+  transform: translateX(4px);
+}
+
+.achievement-icon {
+  width: 6px;
+  height: 6px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  margin-top: 0.5rem;
+  flex-shrink: 0;
+}
+
+.achievement-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--gray-200);
+}
+
+.tech-tag {
+  background: var(--white);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.3rem 0.7rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.tech-tag:hover {
+  background: var(--primary-color);
+  color: var(--white);
+  transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .experience-section {
+    padding: 4rem 1rem;
+  }
+  
+  .experience-timeline {
+    padding-left: 1.5rem;
+  }
+  
+  .experience-timeline::before {
+    left: 0.75rem;
+  }
+  
+  .experience-item::before {
+    left: -2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 3rem 1rem;
+  }
+  
+  .experience-summary {
+    gap: 1rem;
+  }
+  
+  .summary-item {
+    min-width: 150px;
+    padding: 1rem;
+  }
+  
+  .experience-header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .experience-duration {
+    text-align: left;
+  }
+  
+  .experience-item {
+    padding: 1.5rem;
+  }
+  
+  .company-name {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .experience-timeline {
+    padding-left: 0;
+  }
+  
+  .experience-timeline::before {
+    display: none;
+  }
+  
+  .experience-item::before {
+    display: none;
+  }
+  
+  .experience-item {
+    padding: 1.25rem;
+  }
+  
+  .summary-item {
+    min-width: 120px;
+    padding: 0.75rem;
+  }
+  
+  .summary-value {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .role-progression {
+    gap: 0.25rem;
+  }
+  
+  .role-tag {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+  }
+  
+  .achievement-item {
+    padding: 0.75rem;
+  }
+  
+  .achievement-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* Loading Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.experience-item,
+.summary-item {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.experience-item:nth-child(1) { animation-delay: 0.1s; }
+.experience-item:nth-child(2) { animation-delay: 0.2s; }
+.experience-item:nth-child(3) { animation-delay: 0.3s; }

@@ -58,19 +58,22 @@ const Navbar = () => {
                             <a href="#">Home</a>
                         </li>
                         <li>
-                            <a href="#about" onClick={scrollToSection("about")}>About</a>
+                            <a href="#about" onClick={() => scrollToSection("about")}>About</a>
                         </li>
                         <li>
-                            <a href="#techstacks" onClick={scrollToSection("techstacks")}>Skills</a>
+                            <a href="#experience" onClick={scrollToSection("experience")}>Experience</a>
                         </li>
                         <li>
-                            <a href="#projects" onClick={scrollToSection("projects")}>Projects</a>
+                            <a href="#skills" onClick={() => scrollToSection("skills")}>Skills</a>
                         </li>
                         <li>
-                            <a href="#statistics" onClick={scrollToSection("statistics")}>Statistics</a>
+                            <a href="#projects" onClick={() => scrollToSection("projects")}>Projects</a>
                         </li>
                         <li>
-                            <a href="#contacts" onClick={scrollToSection("contacts")}>Contacts</a>
+                            <a href="#statistics" onClick={() => scrollToSection("statistics")}>Statistics</a>
+                        </li>
+                        <li>
+                            <a href="#contact" onClick={() => scrollToSection("contact")}>Contact</a>
                         </li>
                         <li>
                             <button class="nav-resume-button type1" onClick={handleDownload}>
@@ -105,20 +108,23 @@ const Navbar = () => {
                             <MenuItem className='mob-menu' >
                                 <li>
 
-                            <a  href="#about" onClick={scrollToSection("about")} >About</a>
+                            <a  href="#about" onClick={() => scrollToSection("about")} >About</a>
                                 </li>
                             </MenuItem >
                             <MenuItem className='mob-menu' >
-                            <a href="#techstacks" onClick={scrollToSection("techstacks")}>Skills</a>
+                            <a href="#experience" onClick={() => scrollToSection("experience")} >Experience</a>
                             </MenuItem>
                             <MenuItem className='mob-menu' >
-                            <a href="#projects" onClick={scrollToSection("projects")}>Projects</a>
+                            <a href="#skills" onClick={() => scrollToSection("skills")} >Skills</a>
+                            </MenuItem>
+                            <MenuItem className='mob-menu' >
+                            <a href="#projects" onClick={() => scrollToSection("projects")} >Projects</a>
                             </MenuItem>
                             <MenuItem className='mob-menu'>
-                            <a href="#statistics" onClick={scrollToSection("statistics")}>Statistics</a>
+                            <a href="#statistics" onClick={() => scrollToSection("statistics")} >Statistics</a>
                             </MenuItem>
                             <MenuItem className='mob-menu'>
-                            <a href="#contacts" onClick={scrollToSection("contacts")}>Contacts</a>
+                            <a href="#contact" onClick={() => scrollToSection("contact")} >Contact</a>
                             </MenuItem>
                             <MenuItem onClick={handleDownload} className='mob-menu'>
                             Resume

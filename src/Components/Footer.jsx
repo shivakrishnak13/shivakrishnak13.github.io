@@ -1,36 +1,28 @@
 import React from 'react'
 import "../Styles/footer.css"
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
+
 const Footer = () => {
+  const open = (url) => window.open(url, '_blank')
+  const sendMail = () => window.location.href = 'mailto:kosarishivakrishna10@gmail.com'
+
   return (
-    <div className='footer-div'>
-        <div className="footer-button">
-    <div className="footer-box">M</div>
-    <div className="footer-box">A</div>
-    <div className="footer-box">D</div>
-    <div className="footer-box">E</div>
-    <div className="footer-box"></div>
-    <div className="footer-box">W</div>
-    <div className="footer-box">I</div>
-    <div className="footer-box">T</div>
-    <div className="footer-box">H</div>
-    <div className="footer-box">❤️</div>
-    <div className="footer-box">B</div>
-    <div className="footer-box">Y</div>
-    <div className="footer-box"></div>
-    <div className="footer-box">S</div>
-    <div className="footer-box">H</div>
-    <div className="footer-box">I</div>
-    <div className="footer-box">V</div>
-    <div className="footer-box">A</div>
-    <div className="footer-box">K</div>
-    <div className="footer-box">R</div>
-    <div className="footer-box">I</div>
-    <div className="footer-box">S</div>
-    <div className="footer-box">H</div>
-    <div className="footer-box">N</div>
-    <div className="footer-box">A</div>
-</div>
-    </div>
+    <footer className='footer-div'>
+      <div className='footer-content'>
+        <p>© {new Date().getFullYear()} Shivakrishna Kosari</p>
+        <div className='footer-links'>
+          <button aria-label='GitHub' onClick={() => open('https://github.com/shivakrishnak13')} className='footer-icon'>
+            <FaGithub />
+          </button>
+          <button aria-label='LinkedIn' onClick={() => open('https://www.linkedin.com/in/shivakrishnakosari')} className='footer-icon'>
+            <FaLinkedin />
+          </button>
+          <button aria-label='Email' onClick={sendMail} className='footer-icon'>
+            <FaEnvelope />
+          </button>
+        </div>
+      </div>
+    </footer>
   )
 }
 
