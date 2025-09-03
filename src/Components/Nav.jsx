@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const Nav = () => {
   const [isActive, setIsActive] = useState(false);
-  const [navbg, setnavbg] = useState(false);
+  const [navbg, setnavbg] = useState(true);
 
   const handleMenuClick = () => {
     setIsActive(!isActive);
@@ -17,6 +17,7 @@ const Nav = () => {
   };
 
   useEffect(() => {
+    navScroll(); // Initial check
     window.addEventListener("scroll", navScroll);
     return () => window.removeEventListener("scroll", navScroll);
   }, []);
