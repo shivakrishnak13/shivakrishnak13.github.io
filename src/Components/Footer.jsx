@@ -14,7 +14,7 @@ const Footer = () => {
           <button aria-label='GitHub' onClick={() => open('https://github.com/shivakrishnak13')} className='footer-icon'>
             <FaGithub />
           </button>
-          <button aria-label='LinkedIn' onClick={() => open('https://www.linkedin.com/in/shivakrishnakosari')} className='footer-icon'>
+          <button aria-label='LinkedIn' onClick={() => open('https://www.linkedin.com/in/shivakrishna-kosari')} className='footer-icon'>
             <FaLinkedin />
           </button>
           <button aria-label='Email' onClick={sendMail} className='footer-icon'>
