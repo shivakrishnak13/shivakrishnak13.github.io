@@ -6,6 +6,12 @@ import { MdLocationOn } from "react-icons/md";
 
 const ContactMe = () => {
   const [formStatus, setFormStatus] = useState('');
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
 
   const contactData = [
     {
@@ -33,6 +39,14 @@ const ContactMe = () => {
     }
   ];
 
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setFormStatus('sending');
@@ -40,6 +54,13 @@ const ContactMe = () => {
     // Let the form submit naturally to formsubmit.co
     setTimeout(() => {
       setFormStatus('success');
+      // Reset form after successful submission
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
     }, 1000);
   };
 
@@ -110,52 +131,64 @@ const ContactMe = () => {
             onSubmit={handleSubmit}
           >
             <div className='form-group half'>
-              <div>
-                <input
-                  className='form-input'
-                  type="text"
-                  name="name"
-                  placeholder=" "
-                  required
-                  id="name"
-                />
-                <label className='form-label' htmlFor="name">Full Name</label>
-              </div>
-              <div>
+              
+              <div className='input-wrapper'>
                 <input
                   className='form-input'
                   type="email"
                   name="email"
-                  placeholder=" "
+                  value={formData.email}
+                  onChange={handleInputChange}
                   required
-                  id="email"
+                  id="contact-email"
+                  autoComplete="email"
                 />
-                <label className='form-label' htmlFor="email">Email Address</label>
+                <label className='form-label' htmlFor="contact-email">Email Address</label>
+              </div>
+
+              <div className='input-wrapper'>
+                <input
+                  className='form-input'
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  required
+                  id="contact-name"
+                  autoComplete="name"
+                />
+                <label className='form-label' htmlFor="contact-name">Full Name</label>
               </div>
             </div>
 
             <div className='form-group'>
-              <input
-                className='form-input'
-                type="text"
-                name="_subject"
-                placeholder=" "
-                required
-                id="subject"
-              />
-              <label className='form-label' htmlFor="subject">Subject</label>
+              <div className='input-wrapper'>
+                <input
+                  className='form-input'
+                  type="text"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleInputChange}
+                  required
+                  id="contact-subject"
+                />
+                <label className='form-label' htmlFor="contact-subject">Subject</label>
+              </div>
             </div>
 
             <div className='form-group'>
-              <textarea
-                className='form-textarea'
-                name="message"
-                placeholder=" "
-                required
-                id="message"
-                rows="5"
-              ></textarea>
-              <label className='form-label' htmlFor="message">Your Message</label>
+              <div className='input-wrapper'>
+                <textarea
+                  className='form-textarea'
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  required
+                  id="contact-message"
+                  rows="5"
+                ></textarea>
+                <label className='form-label' htmlFor="contact-message">Your Message</label>
+              </div>
             </div>
 
             <input type="hidden" name="_template" value="box" />
@@ -170,8 +203,8 @@ const ContactMe = () => {
             </button>
 
             {formStatus === 'success' && (
-              <p style={{ color: 'green', textAlign: 'center', marginTop: '1rem' }}>
-                Message sent successfully!
+              <p style={{ color: 'var(--success)', textAlign: 'center', marginTop: '1rem', fontWeight: '600' }}>
+                ✅ Message sent successfully!
               </p>
             )}
           </form>
