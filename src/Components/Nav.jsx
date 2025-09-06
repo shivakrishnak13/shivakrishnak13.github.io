@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Shivakrishna_Kosari_Resume from ".././files/Shivakrishna_Kosari_Resume.pdf";
+import Shivakrishna_Kosari_Resume from ".././files/Shivakrishna-Kosari-Resume.pdf";
 
 const Nav = () => {
   const [isActive, setIsActive] = useState(false);
@@ -29,12 +29,12 @@ const Nav = () => {
 
   const handleDownload = () => {
     // Open Google Drive link
-    window.open("https://drive.google.com/file/d/11eCVTWwZ7pFxIctWQzDJAQ2W-kjLPj8V/view", "_blank");
+    window.open("https://drive.google.com/file/d/1s0B8lAYKlVkfFbO-3r6mOl11uSVEBBWD/view?usp=sharing", "_blank");
     
     // Create download link (you'll need to replace this with your actual PDF file)
     // const link = document.createElement('a');
     // link.href = '/path/to/your/resume.pdf'; // Replace with actual path
-    // link.setAttribute('download', 'Shivakrishna_Kosari_Resume.pdf');
+    // link.setAttribute('download', 'Shivakrishna-Kosari-Resume.pdf');
     // link.setAttribute('id', 'resume-link-1');
     // document.body.appendChild(link);
     // link.click();
@@ -88,7 +88,7 @@ const Nav = () => {
             <li className="resume-item">
               <a 
                 href={Shivakrishna_Kosari_Resume}
-                download="Shivakrishna_Kosari_Resume.pdf"
+                download="Shivakrishna-Kosari-Resume.pdf"
                 id="resume-link-1"
                 className={`nav-link resume-button ${navbg ? 'scrolled' : ''}`} 
                 onClick={handleDownload}

@@ -12,6 +12,7 @@ import SkillsModern from './Components/SkillsModern';
 import Footer from './Components/Footer';
 import Nav from './Components/Nav';
 import Social from './Components/Social';
+import Certificates from './Components/Certificates';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
       <Intro />
       <About ref={divRef} func={handleScroll} />
       <Experience />
+      <Certificates />
       <SkillsModern />
       <Projects />
       <Statistics />

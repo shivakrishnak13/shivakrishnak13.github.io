@@ -28,7 +28,7 @@ const Intro = () => {
   }
 
   const linkedinlink = ()=>{
-    window.open("https://www.linkedin.com/in/shivakrishna-kosari-a16039257/")
+    window.open("https://www.linkedin.com/in/shivakrishna-kosari")
   }
 
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import "../Styles/about.css";
 import myphoto from "../Images/myphoto.png";
-import Shivakrishna_Kosari_Resume from "../files/Shivakrishna_Kosari_Resume.pdf";
+import Shivakrishna_Kosari_Resume from "../files/Shivakrishna-Kosari-Resume.pdf";
 
 const About = ({ ref: propRef, func }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,12 +26,12 @@ const About = ({ ref: propRef, func }) => {
 
   const handleDownload = () => {
     // Open Google Drive link
-    window.open("https://drive.google.com/file/d/11eCVTWwZ7pFxIctWQzDJAQ2W-kjLPj8V/view", '_blank');
+    window.open("https://drive.google.com/file/d/1s0B8lAYKlVkfFbO-3r6mOl11uSVEBBWD/view?usp=sharing", '_blank');
     
     // Download local file
     const link = document.createElement('a');
     link.href = Shivakrishna_Kosari_Resume;
-    link.setAttribute('download', 'Shivakrishna_Kosari_Resume.pdf');
+    link.setAttribute('download', 'Shivakrishna-Kosari-Resume.pdf');
     link.setAttribute('id', 'resume-link-2');
     document.body.appendChild(link);
     link.click();

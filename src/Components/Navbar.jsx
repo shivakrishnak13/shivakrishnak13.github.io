@@ -3,7 +3,7 @@ import logo from "../Images/k.png"
 import styles from "../Styles/navbar.module.css";
 import { Menu, MenuButton, MenuList, MenuItem, IconButton, Link } from '@chakra-ui/react';
 import { SlMenu } from "react-icons/sl";
-import resume from "../files/Shivakrishna_Kosari_Resume.pdf"
+import resume from "../files/Shivakrishna-Kosari-Resume.pdf"
 
 const Navbar = () => {
 
