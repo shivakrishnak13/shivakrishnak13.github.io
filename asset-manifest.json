@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff46405a.css",
-    "main.js": "/static/js/main.4a19aef3.js",
+    "main.css": "/static/css/main.61210d7f.css",
+    "main.js": "/static/js/main.ba214b7c.js",
     "static/js/787.1f11dfe9.chunk.js": "/static/js/787.1f11dfe9.chunk.js",
     "static/media/stylespot image.png": "/static/media/stylespot image.eda47f0273244a579219.png",
     "static/media/fashion kart.png": "/static/media/fashion kart.e69eb930eef91f3b3e5b.png",
@@ -30,12 +30,12 @@
     "static/media/icons8-css.svg": "/static/media/icons8-css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/icons8-chakra-ui.svg": "/static/media/icons8-chakra-ui.3cc0dcf33272ae6294329e6a24f995e9.svg",
     "static/media/icons8-html.svg": "/static/media/icons8-html.c1bb84e022ca9d76984d4b943bd678fd.svg",
-    "main.ff46405a.css.map": "/static/css/main.ff46405a.css.map",
-    "main.4a19aef3.js.map": "/static/js/main.4a19aef3.js.map",
+    "main.61210d7f.css.map": "/static/css/main.61210d7f.css.map",
+    "main.ba214b7c.js.map": "/static/js/main.ba214b7c.js.map",
     "787.1f11dfe9.chunk.js.map": "/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff46405a.css",
-    "static/js/main.4a19aef3.js"
+    "static/css/main.61210d7f.css",
+    "static/js/main.ba214b7c.js"
   ]
 }
