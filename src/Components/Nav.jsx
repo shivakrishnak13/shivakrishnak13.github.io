@@ -240,7 +240,7 @@ const Nav = () => {
 
         .menu-toggle {
           display: none;
-          color: #0e4166;
+          color: #0ea5e9;
           font-size: 1.5rem;
           cursor: pointer;
           transition: color 0.3s ease;
