@@ -33,12 +33,12 @@ const Experience = () => {
       company: "Revent AI",
       location: "Remote",
       companyStartDate: "2023-10-01",
-      companyEndDate: null, // null means still working here
+      companyEndDate: "2025-10-01", // null means still working here
       roles: [
         {
           title: "Senior Frontend Developer",
-          startDate: "2024-05-01",
-          endDate: null, // current role
+          startDate: "2025-04-01",
+          endDate: "2025-10-01", // current role
           type: "Promotion",
           highlights: [
             {
@@ -61,7 +61,7 @@ const Experience = () => {
         {
           title: "Junior Frontend Developer",
           startDate: "2023-10-01",
-          endDate: "2024-05-01",
+          endDate: "2025-04-01",
           type: "Initial Role",
           highlights: [
             {
