@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Shivakrishna_Kosari_Resume from ".././files/Shivakrishna-Kosari-Resume.pdf";
+import Shivakrishna_Kosari_Resume from ".././files/Shivakrishna_Kosari_Resume.pdf";
 
 const Nav = () => {
   const [isActive, setIsActive] = useState(false);
@@ -34,7 +34,7 @@ const Nav = () => {
     // Create download link (you'll need to replace this with your actual PDF file)
     // const link = document.createElement('a');
     // link.href = '/path/to/your/resume.pdf'; // Replace with actual path
-    // link.setAttribute('download', 'Shivakrishna-Kosari-Resume.pdf');
+    // link.setAttribute('download', 'Shivakrishna_Kosari_Resume.pdf');
     // link.setAttribute('id', 'resume-link-1');
     // document.body.appendChild(link);
     // link.click();
@@ -88,7 +88,7 @@ const Nav = () => {
             <li className="resume-item">
               <a 
                 href={Shivakrishna_Kosari_Resume}
-                download="Shivakrishna-Kosari-Resume.pdf"
+                download="Shivakrishna_Kosari_Resume.pdf"
                 id="resume-link-1"
                 className={`nav-link resume-button ${navbg ? 'scrolled' : ''}`} 
                 onClick={handleDownload}
