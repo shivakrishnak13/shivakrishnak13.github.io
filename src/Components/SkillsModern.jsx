@@ -12,7 +12,8 @@ import {
   SiChakraui, 
   SiSass, 
   SiGit, 
-  SiFigma 
+  SiFigma,
+  SiMongodb
 } from 'react-icons/si';
 
 const SkillsModern = () => {
@@ -25,6 +26,7 @@ const SkillsModern = () => {
     { icon: <SiTypescript />, name: 'TypeScript', color: '#3178C6' },
     { icon: <SiNodedotjs />, name: 'Node.js', color: '#339933' },
     { icon: <SiExpress />, name: 'Express.js', color: '#000000' },
+    { icon: <SiMongodb />, name: 'MongoDB', color: '#47A248' },
     { icon: <SiMui />, name: 'Material UI', color: '#0081CB' },
     { icon: <SiChakraui />, name: 'Chakra UI', color: '#319795' },
     { icon: <SiSass />, name: 'SCSS', color: '#CC6699' },
