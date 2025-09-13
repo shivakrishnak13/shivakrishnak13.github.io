@@ -87,7 +87,7 @@ const Nav = () => {
             </li>
             <li className="resume-item">
               <a 
-                href={Shivakrishna_Kosari_Resume}
+                href={'https://drive.google.com/uc?export=download&id=1s0B8lAYKlVkfFbO-3r6mOl11uSVEBBWD'}
                 download="Shivakrishna_Kosari_Resume.pdf"
                 id="resume-link-1"
                 className={`nav-link resume-button ${navbg ? 'scrolled' : ''}`} 

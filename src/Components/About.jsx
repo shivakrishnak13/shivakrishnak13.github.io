@@ -30,7 +30,7 @@ const About = ({ ref: propRef, func }) => {
     
     // Download local file
     const link = document.createElement('a');
-    link.href = Shivakrishna_Kosari_Resume;
+    link.href = 'https://drive.google.com/uc?export=download&id=1s0B8lAYKlVkfFbO-3r6mOl11uSVEBBWD';
     link.setAttribute('download', 'Shivakrishna_Kosari_Resume.pdf');
     link.setAttribute('id', 'resume-link-2');
     document.body.appendChild(link);
