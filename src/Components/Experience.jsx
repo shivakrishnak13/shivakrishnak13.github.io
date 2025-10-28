@@ -28,87 +28,63 @@ const Experience = () => {
 
   // Dynamic experience data - Easy to add new companies/roles
   const experienceData = [
-    {
-      id: 1,
-      company: "Revent AI",
-      location: "Remote",
-      companyStartDate: "2023-10-01",
-      companyEndDate: "2025-10-01", // null means still working here
-      roles: [
-        {
-          title: "Senior Frontend Developer",
-          startDate: "2025-04-01",
-          endDate: "2025-10-01", // current role
-          type: "Promotion",
-          highlights: [
-            {
-              title: "Leadership & Ownership",
-              description: "Promoted for taking ownership of complex features and efficiently resolving bugs across multiple applications",
-              icon: "👑"
-            },
-            {
-              title: "Advanced Integrations",
-              description: "Integrated Doc-to-PPT, Prompt-to-PPT features and created in-app guided tours using Joyride",
-              icon: "🚀"
-            },
-            {
-              title: "Performance Optimization",
-              description: "Led performance improvements and bug resolution across React, Vue, and Next.js applications",
-              icon: "⚡"
-            }
-          ]
-        },
-        {
-          title: "Junior Frontend Developer",
-          startDate: "2023-10-01",
-          endDate: "2025-04-01",
-          type: "Initial Role",
-          highlights: [
-            {
-              title: "Presentation Canvas Editor",
-              description: "Created complete presentation canvas editor from scratch using Fabric.js in React application",
-              icon: "🎨"
-            },
-            {
-              title: "Multi-Framework Development",
-              description: "Built applications across React TypeScript, Vue TypeScript, and Next.js with different tech stacks",
-              icon: "🛠️"
-            },
-            {
-              title: "Full-Stack Integration",
-              description: "Developed Node.js + Express.js APIs for PowerPoint XML to JSON conversion and export functionality",
-              icon: "🔗"
-            }
-          ]
-        }
-      ],
-      technologies: {
-        frontend: ['React', 'Vue.js', 'Next.js', 'TypeScript', 'Fabric.js'],
-        styling: ['MUI', 'SCSS', 'Responsive Design'],
-        state: ['Redux Toolkit', 'Pinia Store'],
-        backend: ['Node.js', 'Express.js', 'API Development'],
-        tools: ['PowerPoint Integration', 'SEO Optimization', 'reCAPTCHA', 'Joyride']
+  {
+    id: 1,
+    company: "Revent AI",
+    location: "Remote",
+    companyStartDate: "2023-10-01",
+    companyEndDate: "2025-09-30",
+    roles: [
+      {
+        title: "Full Stack Developer (Frontend-Focused)",
+        startDate: "2023-10-01",
+        endDate: "2025-09-30",
+        type: "Full-Time",
+        highlights: [
+          {
+            title: "AI Presentation Editor",
+            description:
+              "Developed a fully interactive AI-powered presentation editor using Vue.js, React, and Fabric.js with prompt-to-slide and theme customization features.",
+            icon: "🎨"
+          },
+          {
+            title: "Full Stack Integration",
+            description:
+              "Built backend APIs with Node.js and Express.js for PPT JSON ↔ XML conversion, export/import workflows, and frontend synchronization.",
+            icon: "🧩"
+          },
+          {
+            title: "Performance & SEO",
+            description:
+              "Optimized app performance and developed a multilingual SEO platform in Next.js with blogs, tutorials, API Documentation and feature pages for improved visibility.",
+            icon: "⚡"
+          },
+          {
+            title: "End-to-End Product Development",
+            description:
+              "Contributed to architecture, deployment, and UI enhancements across React, Vue, and Next.js applications hosted on Vercel.",
+            icon: "🚀"
+          }
+        ]
       }
+    ],
+    technologies: {
+      frontend: ["React.js", "Vue.js", "Next.js", "TypeScript", "Fabric.js"],
+      styling: ["MUI", "SCSS", "Tailwind CSS", "Responsive Design"],
+      state: ["Redux Toolkit", "Pinia"],
+      backend: ["Node.js", "Express.js", "REST APIs"],
+      tools: [
+        "PowerPoint Integration",
+        "SEO Optimization",
+        "reCAPTCHA",
+        "Joyride",
+        "Vite",
+        "Webpack",
+        "Jest"
+      ]
     }
-    // Easy to add new companies here:
-    // {
-    //   id: 2,
-    //   company: "New Company",
-    //   location: "Location",
-    //   companyStartDate: "2025-01-01",
-    //   companyEndDate: null,
-    //   roles: [
-    //     {
-    //       title: "New Role",
-    //       startDate: "2025-01-01",
-    //       endDate: null,
-    //       type: "New Position",
-    //       highlights: [...]
-    //     }
-    //   ],
-    //   technologies: {...}
-    // }
-  ];
+  }
+];
 
   // Utility functions for date calculations
   const calculateDuration = (startDate, endDate = null) => {
