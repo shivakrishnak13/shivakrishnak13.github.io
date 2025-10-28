@@ -39,16 +39,17 @@ const About = ({ ref: propRef, func }) => {
   };
 
   const profileData = {
-    name: "Shiva Krishna Kosari",
-    title: "Frontend Developer",
-    experience: "2+ Years",
-    description: "I'm a Frontend Developer with over 2 years of experience building modern, responsive, and user-friendly web applications. My work spans across React, Vue, and Next.js applications, where I've created dynamic dashboards, interactive presentation editors, and SEO-focused websites. Alongside frontend development, I have built Node.js and Express.js APIs for seamless data handling and integrations. Skilled in TypeScript, Redux Toolkit, Pinia, MUI, and SCSS, I enjoy solving UI challenges, optimizing performance, and transforming ideas into scalable digital experiences.",
-    stats: [
-      { number: "2+", label: "Years Experience" },
-      { number: "10+", label: "Projects Completed" },
-      { number: "5+", label: "Technologies" }
-    ]
-  };
+  name: "Shiva Krishna Kosari",
+  title: "Full Stack Developer (Frontend-Focused)",
+  experience: "2+ Years",
+  description:
+    "I'm a Full Stack Developer (Frontend-Focused) with over 2 years of experience building responsive, scalable, and user-friendly web applications. I specialize in developing interactive dashboards, AI-powered presentation editors, and SEO-optimized platforms using React, Vue, and Next.js on the frontend and Node.js with Express.js on the backend. Skilled in TypeScript, Redux Toolkit, Pinia, MUI, SCSS, and Tailwind CSS, I focus on crafting maintainable code, integrating APIs, and delivering seamless user experiences.",
+  stats: [
+    { number: "2+", label: "Years Experience" },
+    { number: "10+", label: "Projects Completed" },
+    { number: "10+", label: "Technologies" }
+  ]
+};
 
   return (
     <section 
