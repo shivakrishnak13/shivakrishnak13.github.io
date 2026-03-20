@@ -1,75 +1,123 @@
-# Shivakrishna - Frontend Developer Portfolio  
+# Shiva Krishna Kosari — Portfolio (Next.js)
 
-## 👋 Introduction  
-
-Hello! I'm **Shivakrishna**, a Frontend Developer from Telangana, with a Bachelor of Science degree in **Mathematics, Statistics, and Computer Science (MStCs)** from **Ramakrishna Degree College, Satavahana University, Karimnagar (2022)**.  
-
-I am passionate about coding and web development. I believe technology has the power to transform society, and I enjoy building scalable, user-friendly applications that make an impact.  
+> Migrated from React.js + JavaScript → **Next.js 14 App Router + TypeScript**  
+> Premium dark design with clean animations, full SEO metadata, and production-ready structure.
 
 ---
 
-## 🎓 Education  
+## 🗂 Folder Structure
 
-- **Bachelor of Science (MStCs)** – Ramakrishna Degree College, Satavahana University, Karimnagar (2022)  
-- **Full Stack Web Development (Full-Time, 30 weeks)** – Masai School, Bangalore (2022–2023)  
-
----
-
-## 💼 Professional Experience  
-
-### **Revent AI** (Oct 2023 – Present)  
-**Junior → Senior Frontend Developer** | Remote  
-
-At Revent AI, I have worked across **three different frontend applications** and contributed to key product features:  
-
-- 🖼️ **React TypeScript (Dashboard App)**: Built dashboards for handling **presentations, themes, and user accounts**. Used **Redux Toolkit** for state management and **Material-UI** for styling.  
-- 🎨 **Vue TypeScript (Canvas App)**: Developed an editable **presentation canvas** using **Fabric.js**, added new features, and resolved bugs. Managed state using **Pinia Store** and styled with **SCSS**.  
-- 🌐 **Next.js (SEO Application)**: Built an SEO-focused application with blogs (Hindi & English), feature explanation pages, meta tags, Google reCAPTCHA, and **JSON-LD schema** for search optimization.  
-
-Other key contributions:  
-- Developed **Node.js + Express.js APIs** to convert PowerPoint XML to JSON and export back to PPT.  
-- Integrated advanced features like **Doc-to-PPT**, **Prompt-to-PPT**, and created an interactive **app tour using Joyride**.  
-- Efficiently resolved bugs across multiple applications and collaborated closely with cross-functional teams.  
-- Promoted to **Senior Frontend Developer (May 2025)** for ownership of complex features and consistent delivery.  
-
----
-
-## 🛠️ Technical Skills  
-
-**Frontend:** React.js, Next.js, Vue.js, TypeScript, JavaScript, Redux Toolkit, Pinia, HTML5, CSS3  
-**Styling:** Material-UI, Chakra UI, SCSS  
-**Backend:** Node.js, Express.js  
-**Tools:** Git, Figma, Vite, Webpack  
-**Soft Skills:** Team Collaboration, Problem Solving, Adaptability  
-
----
-
-## 🚀 Projects  
-
-### [MegaMart (E-commerce Clone)](https://megamart.vercel.app/)  
-
-- **Features:** Authentication, Filtering, Add-to-Cart, Payment Flow  
-- **Description:** An individual project completed in 5 days. A full-fledged e-commerce website where users can browse and purchase products.  
-- **Tech Stack:** React, Chakra UI, MockAPI  
-
----
-
-## 🎯 Hobbies & Interests  
-
-- Watching movies 🎬  
-- Playing cricket 🏏  
-- Exploring new technologies 💡  
-
----
-
-## 📬 Contact  
-
-- **Email:** shivakrishna.codes@gmail.com  
-- **GitHub:** [shivakrishnak13](https://github.com/shivakrishnak13)  
-- **LinkedIn:** [Shivakrishna Kosari](https://www.linkedin.com/in/shivakrishna-kosari-a16039257/)  
-- **Portfolio:** [shivakrishnak13.github.io](https://shivakrishnak13.github.io)  
+```
+src/
+├── app/
+│   ├── layout.tsx          ← Root layout + SEO metadata
+│   ├── page.tsx            ← Single-page entry
+│   └── globals.css         ← Design tokens + global styles
+│
+├── components/
+│   ├── navbar/
+│   │   ├── Navbar.tsx
+│   │   └── Navbar.module.css
+│   ├── hero/
+│   │   ├── Hero.tsx
+│   │   └── Hero.module.css
+│   ├── about/
+│   │   ├── About.tsx
+│   │   └── About.module.css
+│   ├── experience/
+│   │   ├── Experience.tsx
+│   │   └── Experience.module.css
+│   ├── skills/
+│   │   ├── Skills.tsx
+│   │   └── Skills.module.css
+│   ├── projects/
+│   │   ├── Projects.tsx
+│   │   └── Projects.module.css
+│   ├── certificates/
+│   │   ├── Certificates.tsx
+│   │   └── Certificates.module.css
+│   ├── statistics/
+│   │   ├── Statistics.tsx
+│   │   └── Statistics.module.css
+│   ├── contact/
+│   │   ├── Contact.tsx
+│   │   └── Contact.module.css
+│   └── footer/
+│       ├── Footer.tsx
+│       └── Footer.module.css
+│
+├── data/
+│   └── portfolio.ts        ← All your content in one file
+│
+├── lib/
+│   └── utils.ts            ← Helper functions
+│
+└── types/
+    └── index.ts            ← All TypeScript interfaces
+```
 
 ---
 
-✨ Thank you for visiting my portfolio!  
-I am enthusiastic about web development and always open to learning and collaborating. Feel free to connect with me for opportunities or discussions.  
+## ⚡ Quick Start
+
+```bash
+# 1. Install dependencies
+npm install
+
+# 2. Add your images to /public/images/
+#    - /public/images/myphoto.png
+#    - /public/images/projects/eduhub.png
+#    - /public/images/projects/stylespot.png
+#    - /public/images/projects/cartrade.png
+#    - /public/images/projects/megamart.png
+#    - /public/images/projects/fashionkart.png
+#    - /public/images/projects/fashionverce.png
+#    - /public/images/certificates/prompt-engineer-cert.jpg
+#    - /public/images/certificates/fullstack-cert.jpg
+
+# 3. Run dev server
+npm run dev
+
+# 4. Build for production
+npm run build
+npm start
+```
+
+---
+
+## 🚀 Deploy to Vercel
+
+```bash
+npx vercel
+```
+
+Or connect your GitHub repo at [vercel.com](https://vercel.com).
+
+---
+
+## ✅ What's New vs Old React App
+
+| Feature | Old (React JS) | New (Next.js) |
+|---|---|---|
+| Routing | React Router | App Router (file-based) |
+| Language | JavaScript | TypeScript |
+| SEO | ❌ None | ✅ Full metadata + OG tags |
+| Performance | Client-side only | SSR + Static Generation |
+| Images | `<img>` tags | Next.js `<Image>` (optimized) |
+| Styling | Plain CSS files | CSS Modules + Tailwind |
+| Animations | Framer Motion | Framer Motion + CSS |
+| Fonts | Google CDN | next/font (self-hosted) |
+| Structure | Flat Components/ | Component-per-folder pattern |
+
+---
+
+## 📦 Tech Stack
+
+- **Next.js 14** — App Router
+- **TypeScript** — Full type safety
+- **Tailwind CSS** — Utility classes
+- **CSS Modules** — Component-scoped styles
+- **Framer Motion** — Animations
+- **react-icons** — Icon library
+- **react-intersection-observer** — Scroll animations
+- **react-github-calendar** — GitHub stats
