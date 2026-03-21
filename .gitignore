@@ -55,4 +55,4 @@ next-env.d.ts
 **/__snapshots__/**
 
 # super chart
-public/charting_library
+public/charting_library.next
