@@ -1,10 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: "/shivakrishnak13.github.io",
   trailingSlash: true,
+
+  assetPrefix:
+    process.env.NODE_ENV === "production"
+      ? "https://shivakrishnak13.github.io"
+      : "",
+
   images: {
-    unoptimized: true, // ← required for static export, Next Image won't work otherwise
+    unoptimized: true,
     remotePatterns: [
       { protocol: "https", hostname: "github-readme-stats.vercel.app" },
       {
