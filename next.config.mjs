@@ -1,20 +1,22 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
+  trailingSlash: true,
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'github-readme-stats.vercel.app',
+        protocol: "https",
+        hostname: "github-readme-stats.vercel.app",
       },
       {
-        protocol: 'https',
-        hostname: 'github-readme-streak-stats.herokuapp.com',
+        protocol: "https",
+        hostname: "github-readme-streak-stats.herokuapp.com",
       },
     ],
-    // Allow unoptimized SVGs from /public
     dangerouslyAllowSVG: true,
-    contentDispositionType: 'attachment',
+    contentDispositionType: "attachment",
   },
-}
+};
 
-export default nextConfig
+export default nextConfig;
