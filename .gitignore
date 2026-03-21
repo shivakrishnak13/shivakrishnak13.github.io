@@ -24,3 +24,35 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .next
+
+
+# testing
+/coverage
+
+# database
+/prisma/db.sqlite
+/prisma/db.sqlite-journal
+
+# next.js
+/.next/
+/out/
+next-env.d.ts
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+
+**/__snapshots__/**
+
+# super chart
+public/charting_library
