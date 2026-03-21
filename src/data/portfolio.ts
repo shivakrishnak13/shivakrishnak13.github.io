@@ -1,6 +1,7 @@
 import type {
   Profile,
   Project,
+  ProfessionalProject,
   ExperienceItem,
   Skill,
   Certificate,
@@ -42,7 +43,72 @@ export const navLinks: NavLink[] = [
   { label: 'Contact', href: '#contact' },
 ]
 
-// ─── Projects ─────────────────────────────────────────────────────────────────
+// ─── Professional Projects (Company — Internal) ───────────────────────────────
+// These are real work projects. No live/github links. Contribution-forward.
+
+export const professionalProjects: ProfessionalProject[] = [
+  {
+    id: 1,
+    company: 'Revent AI',
+    companyPeriod: 'Oct 2023 – Sep 2025',
+    name: 'AI Presentation Platform',
+    tagline:
+      'Full-stack AI-powered platform for creating, editing and exporting presentations — featuring a React dashboard, Vue.js canvas editor, and Node.js backend.',
+    contributions: [
+      'Built Prompt-to-PPT, Doc-to-PPT, and AI chat-based slide generation features in the React dashboard, enabling users to create full presentations from conversational inputs.',
+      'Developed a PowerPoint-to-custom-format converter so users can import existing PPTs and transform them into AI-editable presentations.',
+      'Built a custom Vue.js slide editor using HTML-based div rendering instead of canvas, with rich editing support — custom fonts, image integration, shapes, colors, and styles.',
+      'Implemented export functionality to PDF, custom PPT format, and PowerPoint files from the canvas editor.',
+      'Built REST APIs in Node.js/Express for PPT import/export, including a conversion engine that transforms PowerPoint XML into custom JSON format and back.',
+      'Developed a multilingual SEO platform in Next.js with blogs, tutorials, and API documentation pages for improved product visibility.',
+    ],
+    impact: [
+      'Delivered an end-to-end AI presentation workflow — from generation to export.',
+      'Enabled users to convert traditional PPTs into editable AI-based formats.',
+      'Improved user productivity through automation and real-time editing.',
+    ],
+    technologies: [
+      { name: 'React', icon: '/images/icons/react.svg' },
+      { name: 'Vue.js', icon: '/images/icons/vuejs.svg' },
+      { name: 'Next.js', icon: '/images/icons/nextjs.svg' },
+      { name: 'TypeScript', icon: '/images/icons/typescript.svg' },
+      { name: 'Node.js', icon: '/images/icons/nodejs.svg' },
+      { name: 'Express', icon: '/images/icons/express.svg' },
+    ],
+  },
+  {
+    id: 2,
+    company: 'Byldd',
+    companyPeriod: 'Dec 2025 – Mar 2026',
+    name: 'Sentimentracker',
+    tagline:
+      'SaaS platform providing real-time sentiment analysis and trending keywords for trading markets — stocks, crypto, IPOs, NFTs, and airdrops.',
+    contributions: [
+      'Designed and implemented a complete subscription management system covering plan creation, upgrades, downgrades, cancellations, and renewals for both recurring and lifetime plans.',
+      'Integrated Stripe and Shopify APIs to handle payment flows, subscription creation, and webhook events — keeping app state in sync with external providers in real-time.',
+      'Built cross-provider plan switching logic (Stripe ↔ Shopify) and handled edge cases like cancellations, renewals, and failed payments.',
+      'Developed an admin dashboard using TanStack Query for efficient data fetching, caching, and synchronization — enabling internal teams to manage subscriptions and monitor billing.',
+      'Implemented form validation using React Hook Form and Zod, improving reliability and UX across all subscription flows.',
+      'Built cron jobs to fetch and update trending sentiment data on hourly and daily schedules.',
+      'Worked on authentication systems, middleware, and request validation on the backend.',
+    ],
+    impact: [
+      'Successfully supported initial product launch with 8–10 weekly subscriptions.',
+      'Ensured stable, reliable payment flows across Stripe and Shopify.',
+      'Built scalable subscription infrastructure ready for platform growth.',
+    ],
+    technologies: [
+      { name: 'Next.js', icon: '/images/icons/nextjs.svg' },
+      { name: 'React', icon: '/images/icons/react.svg' },
+      { name: 'TypeScript', icon: '/images/icons/typescript.svg' },
+      { name: 'Node.js', icon: '/images/icons/nodejs.svg' },
+      { name: 'MongoDB', icon: '/images/icons/mongodb.svg' },
+      { name: 'Express', icon: '/images/icons/express.svg' },
+    ],
+  },
+]
+
+// ─── Personal Projects (Open-source — have live + github links) ───────────────
 
 export const projects: Project[] = [
   {
@@ -141,6 +207,54 @@ export const projects: Project[] = [
 export const experiences: ExperienceItem[] = [
   {
     id: 1,
+    company: 'Byldd',
+    location: 'Remote',
+    companyStartDate: '2025-12-01',
+    companyEndDate: '2026-03-01',
+    roles: [
+      {
+        title: 'Full Stack Engineer',
+        startDate: '2025-12-01',
+        endDate: '2026-03-01',
+        type: 'Full-Time',
+        highlights: [
+          {
+            title: 'Subscription Management System',
+            description:
+              'Designed and built a complete subscription lifecycle system — plan creation, upgrades, downgrades, cancellations, and renewals for both recurring and lifetime plans.',
+            icon: '💳',
+          },
+          {
+            title: 'Stripe & Shopify Integration',
+            description:
+              'Integrated Stripe and Shopify APIs for payment flows, webhook handling, and cross-provider plan switching (Stripe ↔ Shopify) with real-time state sync.',
+            icon: '🔗',
+          },
+          {
+            title: 'Admin Dashboard',
+            description:
+              'Built internal admin UI using TanStack Query for efficient data fetching and caching — enabling teams to manage subscriptions, plans, and billing activities.',
+            icon: '📊',
+          },
+          {
+            title: 'Frontend & Backend Features',
+            description:
+              'Contributed across Next.js/React frontend and Node.js/Express/MongoDB backend, using React Hook Form + Zod for validation, and cron jobs for scheduled data updates.',
+            icon: '🚀',
+          },
+        ],
+      },
+    ],
+    technologies: {
+      frontend: ['Next.js', 'React', 'TypeScript'],
+      styling: ['Tailwind CSS'],
+      state: ['TanStack Query', 'React Hook Form', 'Zod'],
+      backend: ['Node.js', 'Express.js', 'MongoDB'],
+      tools: ['Stripe API', 'Shopify API', 'Webhooks', 'Cron Jobs'],
+    },
+  },
+  {
+    id: 2,
     company: 'Revent AI',
     location: 'Remote',
     companyStartDate: '2023-10-01',
@@ -184,15 +298,7 @@ export const experiences: ExperienceItem[] = [
       styling: ['MUI', 'SCSS', 'Tailwind CSS', 'Responsive Design'],
       state: ['Redux Toolkit', 'Pinia'],
       backend: ['Node.js', 'Express.js', 'REST APIs'],
-      tools: [
-        'PowerPoint Integration',
-        'SEO Optimization',
-        'reCAPTCHA',
-        'Joyride',
-        'Vite',
-        'Webpack',
-        'Jest',
-      ],
+      tools: ['PowerPoint Integration', 'SEO Optimization', 'reCAPTCHA', 'Vite', 'Webpack', 'Jest'],
     },
   },
 ]

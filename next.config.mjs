@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
   images: {
-    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -13,6 +11,9 @@ const nextConfig = {
         hostname: 'github-readme-streak-stats.herokuapp.com',
       },
     ],
+    // Allow unoptimized SVGs from /public
+    dangerouslyAllowSVG: true,
+    contentDispositionType: 'attachment',
   },
 }
 

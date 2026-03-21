@@ -30,9 +30,10 @@ export interface Profile {
 
 export interface TechIcon {
   name: string
-  icon: string // path to icon
+  icon: string
 }
 
+/** Personal / open-source projects — have live + github links */
 export interface Project {
   id: number
   name: string
@@ -40,6 +41,18 @@ export interface Project {
   image: string
   liveUrl: string
   githubUrl: string
+  technologies: TechIcon[]
+}
+
+/** Professional company projects — no public links, contribution-forward */
+export interface ProfessionalProject {
+  id: number
+  company: string
+  companyPeriod: string   // e.g. "Oct 2023 – Sep 2025"
+  name: string
+  tagline: string         // one-line what the product does
+  contributions: string[] // your specific bullet-point contributions
+  impact?: string[]       // measurable outcomes (optional)
   technologies: TechIcon[]
 }
 
