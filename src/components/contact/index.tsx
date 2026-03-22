@@ -28,13 +28,29 @@ export function Contact() {
     setForm((prev) => ({ ...prev, [event.target.name]: event.target.value }))
   }
 
-  const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault()
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
     setStatus('sending')
-    setTimeout(() => {
-      setStatus('success')
-      setForm({ name: '', email: '', subject: '', message: '' })
-    }, 800)
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
+          name: form.name,
+          email: form.email,
+          subject: form.subject,
+          message: form.message,
+        }),
+      })
+
+      const data = await res.json()
+      setStatus(data.success ? 'success' : 'error')
+      if (data.success) setForm({ name: '', email: '', subject: '', message: '' })
+    } catch {
+      setStatus('error')
+    }
   }
 
   const contactItems = [
@@ -119,8 +135,6 @@ export function Contact() {
 
           <form
             className="flex flex-col gap-5 rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-9"
-            action={`https://formsubmit.co/${profile.email}`}
-            method="POST"
             onSubmit={handleSubmit}
           >
             <input type="hidden" name="_template" value="box" />

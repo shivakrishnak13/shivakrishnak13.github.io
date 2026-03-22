@@ -12,10 +12,10 @@ import type {
 
 export const profile: Profile = {
   name: "Shivakrishna Kosari",
-  title: "Full Stack Developer (Frontend-Focused)",
+  title: "Full Stack Developer",
   experience: "2+",
   description:
-    "I'm a Full Stack Developer (Frontend-Focused) with over 2 years of experience building responsive, scalable, and user-friendly web applications. I specialize in developing interactive dashboards, AI-powered presentation editors, and SEO-optimized platforms using React, Vue, and Next.js on the frontend and Node.js with Express.js on the backend. Skilled in TypeScript, Redux Toolkit, Pinia, MUI, SCSS, and Tailwind CSS, I focus on crafting maintainable code, integrating APIs, and delivering seamless user experiences.",
+    "I'm a Full Stack Developer with 2+ years of experience building responsive, scalable, and production-ready web applications. I've worked across the full stack — from AI-powered presentation editors and SEO platforms to SaaS products with complex subscription and payment systems. On the frontend, I build with React, Vue, Next.js, and TypeScript, using tools like Redux Toolkit, Pinia, TanStack Query, and Tailwind CSS. On the backend, I work with Node.js, Express, and MongoDB to design clean APIs and scalable server-side logic. I've integrated payment providers like Stripe and Shopify, built subscription management systems, and shipped features that directly impacted real users. I care about writing maintainable code, delivering great user experiences, and building things that actually work in production.",
   email: "shivakrishna.codes@gmail.com",
   phone: "+91 9440997107",
   location: "Jagtial, Telangana",
@@ -218,7 +218,7 @@ export const experiences: ExperienceItem[] = [
       {
         title: "Full Stack Engineer",
         startDate: "2025-12-01",
-        endDate: "2026-03-01",
+        endDate: "2026-04-01",
         type: "Full-Time",
         highlights: [
           {
