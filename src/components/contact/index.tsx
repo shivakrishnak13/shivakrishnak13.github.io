@@ -33,7 +33,7 @@ export function Contact() {
     setStatus('sending')
 
     try {
-      const res = await fetch('https://api.web3forms.com/submit', {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_WEB3FORMS_URL}/submit`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
