@@ -1,9 +1,10 @@
 'use client'
 
 import { profile } from '@/data/portfolio'
-import { scrollToSection } from '@/lib/utils'
+import { openResumeInNewTab, scrollToSection } from '@/lib/utils'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { FiDownload } from 'react-icons/fi'
 import { HiArrowDown } from 'react-icons/hi'
 import { MdAlternateEmail } from 'react-icons/md'
 
@@ -69,6 +70,13 @@ export function Hero() {
             onClick={() => scrollToSection('#projects')}
           >
             View My Work
+          </button>
+          <button
+            className="btn btn-ghost max-sm:w-full max-sm:justify-center"
+            onClick={() => openResumeInNewTab(profile.resumeUrl, profile.resumeLiveUrl)}
+          >
+            <FiDownload />
+            Resume
           </button>
           <button
             className="btn btn-ghost max-sm:w-full max-sm:justify-center"

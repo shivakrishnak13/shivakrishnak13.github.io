@@ -23,6 +23,7 @@ export interface Profile {
   linkedin: string
   instagram: string
   resumeUrl: string
+  resumeLiveUrl: string
   stats: StatItem[]
 }
 

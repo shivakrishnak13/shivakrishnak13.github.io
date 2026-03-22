@@ -1,7 +1,7 @@
 'use client'
 
 import { useInView } from 'react-intersection-observer'
-import { skills } from '@/data/portfolio'
+import { skills, softSkills } from '@/data/portfolio'
 import {
   SiChakraui,
   SiExpress,
@@ -89,6 +89,31 @@ export function Skills() {
               />
             </div>
           ))}
+        </div>
+
+        <div
+          className={[
+            'mt-12 transition-all duration-700',
+            inView ? 'translate-y-0 opacity-100 delay-300' : 'translate-y-6 opacity-0',
+          ].join(' ')}
+        >
+          <div className="mb-5">
+            <h3 className="font-display text-xl font-bold text-[var(--text)]">Soft Skills</h3>
+            <p className="mt-2 text-sm text-[var(--text-2)]">
+              Collaboration and delivery habits I rely on while building products.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap gap-3">
+            {softSkills.map((skill) => (
+              <span
+                key={skill}
+                className="rounded-full border border-[var(--border)] bg-[var(--surface)] px-4 py-2 text-sm text-[var(--text-2)] transition hover:border-[var(--accent)] hover:text-[var(--text)]"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>

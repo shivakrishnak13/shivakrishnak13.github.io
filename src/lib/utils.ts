@@ -35,6 +35,24 @@ export function scrollToSection(id: string): void {
   if (el) el.scrollIntoView({ behavior: 'smooth' })
 }
 
+export function openResumeInNewTab(
+  downloadUrl: string,
+  viewUrl: string,
+  fileName = 'Shivakrishna_Kosari_Resume.pdf',
+): void {
+  if (typeof window === 'undefined') return
+
+  window.open(viewUrl, '_blank', 'noopener,noreferrer')
+
+  const link = document.createElement('a')
+  link.href = downloadUrl
+  link.download = fileName
+  link.rel = 'noopener noreferrer'
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+}
+
 // ─── Class Merging ────────────────────────────────────────────────────────────
 
 export function cn(...classes: (string | undefined | null | false)[]): string {

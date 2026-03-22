@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { useInView } from 'react-intersection-observer'
 import { profile } from '@/data/portfolio'
+import { openResumeInNewTab } from '@/lib/utils'
 import { FiDownload, FiMapPin, FiMail, FiPhone } from 'react-icons/fi'
 
 export function About() {
@@ -98,16 +99,14 @@ export function About() {
               ))}
             </div>
 
-            <a
-              href={profile.resumeUrl}
-              download="Shivakrishna_Kosari_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
               className="btn btn-primary"
+              onClick={() => openResumeInNewTab(profile.resumeUrl, profile.resumeLiveUrl)}
             >
               <FiDownload />
               Download Resume
-            </a>
+            </button>
           </div>
         </div>
       </div>
