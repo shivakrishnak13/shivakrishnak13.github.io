@@ -23,7 +23,8 @@ export const profile: Profile = {
   linkedin: "https://www.linkedin.com/in/shivakrishna-kosari",
   instagram: "https://www.instagram.com/shivakrishnakosari",
   resumeUrl:
-    "https://drive.google.com/uc?export=download&id=1s0B8lAYKlVkfFbO-3r6mOl11uSVEBBWD",
+    "https://drive.google.com/uc?export=download&id=1wjE6SC90-ur1QzGU4vRs4yHZN4eKzWs8",
+  resumeLiveUrl: "https://drive.google.com/file/d/1wjE6SC90-ur1QzGU4vRs4yHZN4eKzWs8/view?usp=sharing",
   stats: [
     { number: "2+", label: "Years Experience" },
     { number: "15+", label: "Projects Completed" },
@@ -332,6 +333,15 @@ export const skills: Skill[] = [
   { name: "Git", color: "#F05032", iconKey: "git" },
   { name: "Figma", color: "#F24E1E", iconKey: "figma" },
 ];
+
+export const softSkills: string[] = [
+  'Communication',
+  'Problem Solving',
+  'Team Collaboration',
+  'Ownership',
+  'Adaptability',
+  'Time Management',
+]
 
 // ─── Certificates ─────────────────────────────────────────────────────────────
 

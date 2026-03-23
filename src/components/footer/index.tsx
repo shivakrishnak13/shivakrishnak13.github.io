@@ -1,5 +1,9 @@
+'use client'
+
 import { navLinks, profile } from '@/data/portfolio'
+import { openResumeInNewTab, scrollToSection } from '@/lib/utils'
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { FiDownload } from 'react-icons/fi'
 import { HiMail } from 'react-icons/hi'
 
 export function Footer() {
@@ -23,10 +27,23 @@ export function Footer() {
 
           <nav className="flex flex-col gap-2 text-[0.88rem] text-[var(--text-2)] max-sm:flex-row max-sm:flex-wrap max-sm:gap-x-5 max-sm:gap-y-3" aria-label="Footer navigation">
             {navLinks.map((link) => (
-              <a key={link.href} href={link.href} className="transition hover:text-[var(--accent)]">
+              <button
+                key={link.href}
+                type="button"
+                onClick={() => scrollToSection(link.href)}
+                className="text-left transition hover:text-[var(--accent)]"
+              >
                 {link.label}
-              </a>
+              </button>
             ))}
+            <button
+              type="button"
+              onClick={() => openResumeInNewTab(profile.resumeUrl, profile.resumeLiveUrl)}
+              className="inline-flex items-center gap-2 text-left transition hover:text-[var(--accent)]"
+            >
+              <FiDownload />
+              Resume
+            </button>
           </nav>
 
           <div className="flex flex-wrap items-start gap-3">
@@ -41,7 +58,7 @@ export function Footer() {
 
         <div className="flex flex-wrap items-center justify-between gap-4 max-sm:flex-col max-sm:items-start">
           <p className="text-[0.85rem] text-[var(--text-2)]">
-            © {year} <strong>Shiva Krishna Kosari</strong>. All rights reserved.
+            © {year} <strong>Shivakrishna Kosari</strong>. All rights reserved.
           </p>
           <p className="font-mono text-[0.82rem] text-[var(--muted)]">
             Built with <span className="inline-block animate-pulse text-[#f87171]">♥</span> using Next.js &amp; TypeScript

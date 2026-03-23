@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { navLinks, profile } from '@/data/portfolio'
-import { scrollToSection } from '@/lib/utils'
+import { openResumeInNewTab, scrollToSection } from '@/lib/utils'
 import { FiDownload } from 'react-icons/fi'
 import { HiMenuAlt3, HiX } from 'react-icons/hi'
 
@@ -76,16 +76,14 @@ export function Navbar() {
             })}
           </nav>
 
-          <a
-            href={profile.resumeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            type="button"
             className="btn btn-primary ml-4 hidden shrink-0 lg:inline-flex"
-            download="Shivakrishna_Kosari_Resume.pdf"
+            onClick={() => openResumeInNewTab(profile.resumeUrl, profile.resumeLiveUrl)}
           >
             <FiDownload />
             Resume
-          </a>
+          </button>
 
           <button
             className="ml-auto flex h-9 w-9 items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--surface)] text-[var(--text)] transition hover:border-[var(--accent)] hover:text-[var(--accent)] lg:hidden"
@@ -119,14 +117,16 @@ export function Navbar() {
               {link.label}
             </button>
           ))}
-          <a
-            href={profile.resumeUrl}
-            download
+          <button
+            type="button"
             className="btn btn-primary mt-4"
-            onClick={() => setMobileOpen(false)}
+            onClick={() => {
+              openResumeInNewTab(profile.resumeUrl, profile.resumeLiveUrl)
+              setMobileOpen(false)
+            }}
           >
             <FiDownload /> Download Resume
-          </a>
+          </button>
         </nav>
       </div>
     </>
