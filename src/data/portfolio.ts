@@ -3,7 +3,7 @@ import type {
   Project,
   ProfessionalProject,
   ExperienceItem,
-  Skill,
+  Category,
   Certificate,
   NavLink,
 } from "@/types";
@@ -24,7 +24,8 @@ export const profile: Profile = {
   instagram: "https://www.instagram.com/shivakrishnakosari",
   resumeUrl:
     "https://drive.google.com/uc?export=download&id=1wjE6SC90-ur1QzGU4vRs4yHZN4eKzWs8",
-  resumeLiveUrl: "https://drive.google.com/file/d/1wjE6SC90-ur1QzGU4vRs4yHZN4eKzWs8/view?usp=sharing",
+  resumeLiveUrl:
+    "https://drive.google.com/file/d/1wjE6SC90-ur1QzGU4vRs4yHZN4eKzWs8/view?usp=sharing",
   stats: [
     { number: "2+", label: "Years Experience" },
     { number: "15+", label: "Projects Completed" },
@@ -115,6 +116,25 @@ export const professionalProjects: ProfessionalProject[] = [
 // ─── Personal Projects (Open-source — have live + github links) ───────────────
 
 export const projects: Project[] = [
+  {
+    id: 7,
+    name: "CareerOS",
+    description:
+      "CareerOS is an AI-powered career management platform that helps users organize their entire job search journey. Users can track job applications, manage interview rounds, monitor career analytics, generate personalized cover letters, tailor resumes, and prepare for interviews using AI-powered tools. The platform features secure authentication, real-time dashboards, modern React async patterns, and a responsive SaaS-style user experience.",
+    image: "/images/projects/careeros.png",
+    liveUrl: "https://careeeros.vercel.app/",
+    githubUrl: "https://github.com/shivakrishnak13/careeeros",
+    technologies: [
+      { name: "Next.js", icon: "/images/icons/nextjs.svg" },
+      { name: "React", icon: "/images/icons/react.svg" },
+      { name: "TypeScript", icon: "/images/icons/typescript.svg" },
+      { name: "PostgreSQL", icon: "/images/icons/postgresql.svg" },
+      { name: "Prisma", icon: "/images/icons/prisma.svg" },
+      { name: "Tailwind CSS", icon: "/images/icons/tailwind.svg" },
+      { name: "shadcn/ui", icon: "/images/icons/shadcn.svg" },
+      { name: "AI", icon: "/images/icons/ai.svg" },
+    ],
+  },
   {
     id: 1,
     name: "EduHub",
@@ -316,32 +336,82 @@ export const experiences: ExperienceItem[] = [
 
 // ─── Skills ───────────────────────────────────────────────────────────────────
 
-export const skills: Skill[] = [
-  { name: "React", color: "#61DAFB", iconKey: "react" },
-  { name: "Next.js", color: "#ffffff", iconKey: "nextjs" },
-  { name: "Vue.js", color: "#4FC08D", iconKey: "vue" },
-  { name: "TypeScript", color: "#3178C6", iconKey: "typescript" },
-  { name: "Redux Toolkit", color: "#764ABC", iconKey: "redux" },
-  { name: "Pinia", color: "#4FC08D", iconKey: "pinia" },
-  { name: "Node.js", color: "#339933", iconKey: "nodejs" },
-  { name: "Express.js", color: "#ffffff", iconKey: "express" },
-  { name: "MongoDB", color: "#47A248", iconKey: "mongodb" },
-  { name: "Material UI", color: "#0081CB", iconKey: "mui" },
-  { name: "Chakra UI", color: "#319795", iconKey: "chakra" },
-  { name: "SCSS", color: "#CC6699", iconKey: "scss" },
-  { name: "Tailwind", color: "#38BDF8", iconKey: "tailwind" },
-  { name: "Git", color: "#F05032", iconKey: "git" },
-  { name: "Figma", color: "#F24E1E", iconKey: "figma" },
-];
+export const skillsCategory: Category[] = [
+  {
+    id: 'frontend',
+    label: 'Frontend',
+    skills: [
+      { name: 'React', color: '#61DAFB', iconKey: 'react' },
+      { name: 'Next.js', color: '#ffffff', iconKey: 'nextjs' },
+      { name: 'Vue.js', color: '#4FC08D', iconKey: 'vue' },
+      { name: 'JavaScript', color: '#F7DF1E', iconKey: 'javascript' },
+      { name: 'TypeScript', color: '#3178C6', iconKey: 'typescript' },
+      { name: 'Redux Toolkit', color: '#764ABC', iconKey: 'redux' },
+      { name: 'Pinia', color: '#FFD859', iconKey: 'pinia' },
+      { name: 'TanStack Query', color: '#76CA8F', iconKey: 'tanstack' },
+      { name: 'React Hook Form', color: '#EC5990', iconKey: 'reacthookform' },
+      { name: 'React Native', color: '#61DAFB', iconKey: 'reactnative', badge: 'new' },
+    ],
+  },
+  {
+    id: 'backend',
+    label: 'Backend',
+    skills: [
+      { name: 'Node.js', color: '#339933', iconKey: 'nodejs' },
+      { name: 'Express.js', color: '#888888', iconKey: 'express' },
+      { name: 'Zod', color: '#3068B7', iconKey: 'zod', badge: 'new' },
+      { name: 'Webhooks', color: '#6366F1', iconKey: 'webhooks', badge: 'new' },
+      { name: 'Stripe', color: '#635BFF', iconKey: 'stripe', badge: 'new' },
+    ],
+  },
+  {
+    id: 'database',
+    label: 'Database',
+    skills: [
+      { name: 'MongoDB', color: '#47A248', iconKey: 'mongodb' },
+      { name: 'PostgreSQL', color: '#336791', iconKey: 'postgresql' },
+    ],
+  },
+  {
+    id: 'styling',
+    label: 'UI / Styling',
+    skills: [
+      { name: 'Tailwind CSS', color: '#38BDF8', iconKey: 'tailwind' },
+      { name: 'Shadcn/ui', color: '#ffffff', iconKey: 'shadcn', badge: 'new' },
+      { name: 'Material UI', color: '#0081CB', iconKey: 'mui' },
+      { name: 'Chakra UI', color: '#319795', iconKey: 'chakra' },
+      { name: 'SCSS', color: '#CC6699', iconKey: 'scss' },
+    ],
+  },
+  {
+    id: 'devops',
+    label: 'DevOps & Tools',
+    skills: [
+      { name: 'Git', color: '#F05032', iconKey: 'git' },
+      { name: 'GitHub', color: '#ffffff', iconKey: 'github', badge: 'new' },
+      { name: 'GitHub Actions', color: '#2088FF', iconKey: 'githubactions', badge: 'new' },
+      { name: 'Vercel', color: '#ffffff', iconKey: 'vercel', badge: 'new' },
+      { name: 'Figma', color: '#F24E1E', iconKey: 'figma' },
+    ],
+  },
+  {
+    id: 'ai',
+    label: 'AI',
+    skills: [
+      { name: 'Prompt Engineering', color: '#A855F7', iconKey: 'prompt', badge: 'ai' },
+    ],
+  },
+]
+
 
 export const softSkills: string[] = [
-  'Communication',
-  'Problem Solving',
-  'Team Collaboration',
-  'Ownership',
-  'Adaptability',
-  'Time Management',
-]
+  "Communication",
+  "Problem Solving",
+  "Team Collaboration",
+  "Ownership",
+  "Adaptability",
+  "Time Management",
+];
 
 // ─── Certificates ─────────────────────────────────────────────────────────────
 
