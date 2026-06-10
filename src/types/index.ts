@@ -93,10 +93,19 @@ export interface ExperienceItem {
 
 // ─── Skill Types ─────────────────────────────────────────────────────────────
 
+export type Badge = 'new' | 'ai'
+
 export interface Skill {
   name: string
   color: string
   iconKey: string
+  badge?: Badge
+}
+
+export interface Category {
+  id: string
+  label: string
+  skills: Skill[]
 }
 
 // ─── Certificate Types ───────────────────────────────────────────────────────
