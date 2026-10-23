@@ -64,7 +64,7 @@ export function Projects() {
 
           {/* Professional project cards */}
           <div className="flex flex-col gap-6">
-            {professionalProjects.map((proj, i) => {
+            {[...professionalProjects].reverse().map((proj, i) => {
               const isExpanded = expanded === proj.id
               // Show first 4 bullets always, rest on expand
               const visibleContributions = isExpanded
