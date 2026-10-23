@@ -48,6 +48,7 @@ export const navLinks: NavLink[] = [
 // ─── Professional Projects (Company — Internal) ───────────────────────────────
 // These are real work projects. No live/github links. Contribution-forward.
 
+
 export const professionalProjects: ProfessionalProject[] = [
   {
     id: 1,
@@ -55,19 +56,21 @@ export const professionalProjects: ProfessionalProject[] = [
     companyPeriod: "Oct 2023 – Sep 2025",
     name: "AI Presentation Platform",
     tagline:
-      "Full-stack AI-powered platform for creating, editing and exporting presentations — featuring a React dashboard, Vue.js canvas editor, and Node.js backend.",
+      "Full-stack AI presentation platform with a React dashboard, Vue.js editor, and Node.js backend for presentation generation, editing, importing, and exporting.",
     contributions: [
-      "Built Prompt-to-PPT, Doc-to-PPT, and AI chat-based slide generation features in the React dashboard, enabling users to create full presentations from conversational inputs.",
-      "Developed a PowerPoint-to-custom-format converter so users can import existing PPTs and transform them into AI-editable presentations.",
-      "Built a custom Vue.js slide editor using HTML-based div rendering instead of canvas, with rich editing support — custom fonts, image integration, shapes, colors, and styles.",
-      "Implemented export functionality to PDF, custom PPT format, and PowerPoint files from the canvas editor.",
-      "Built REST APIs in Node.js/Express for PPT import/export, including a conversion engine that transforms PowerPoint XML into custom JSON format and back.",
-      "Developed a multilingual SEO platform in Next.js with blogs, tutorials, and API documentation pages for improved product visibility.",
+      "Built Prompt-to-PPT, Doc-to-PPT, and AI chat-based slide generation features in the React dashboard, enabling users to create presentations from conversational inputs.",
+      "Developed a PowerPoint import workflow that converts existing presentations into a custom JSON format for AI-assisted editing.",
+      "Built and maintained a Vue.js presentation editor, prototyping with Fabric.js before moving to a DOM-based div renderer with custom typography, shape manipulation, and layout controls.",
+      "Implemented presentation export workflows for PDF and PPTX, alongside conversion between PowerPoint OpenXML and the platform's custom JSON format.",
+      "Developed Node.js/Express.js REST APIs for presentation generation, import/export workflows, and frontend synchronization.",
+      "Optimized dashboard performance by restructuring Redux Toolkit state slices and memoizing expensive component subtrees with React.memo and useMemo.",
+      "Built a multilingual Next.js marketing platform with JSON-LD structured data and Google Search Console integration.",
+      "Contributed to code reviews and authored custom ESLint rules to encourage reusable component patterns and UI consistency.",
     ],
     impact: [
-      "Delivered an end-to-end AI presentation workflow — from generation to export.",
-      "Enabled users to convert traditional PPTs into editable AI-based formats.",
-      "Improved user productivity through automation and real-time editing.",
+      "Contributed to a platform that supported 34,000+ AI-generated presentations.",
+      "Supported presentation workflows from AI generation and editing through file export.",
+      "Contributed to a multilingual marketing platform that supported 13,000+ sign-ups.",
     ],
     technologies: [
       { name: "React", icon: "/images/icons/react.svg" },
@@ -84,20 +87,21 @@ export const professionalProjects: ProfessionalProject[] = [
     companyPeriod: "Dec 2025 – Mar 2026",
     name: "Sentimentracker",
     tagline:
-      "SaaS platform providing real-time sentiment analysis and trending keywords for trading markets — stocks, crypto, IPOs, NFTs, and airdrops.",
+      "SaaS platform for tracking market sentiment and trending keywords across stocks, crypto, IPOs, NFTs, and airdrops, with subscription billing and internal administration tools.",
     contributions: [
-      "Designed and implemented a complete subscription management system covering plan creation, upgrades, downgrades, cancellations, and renewals for both recurring and lifetime plans.",
-      "Integrated Stripe and Shopify APIs to handle payment flows, subscription creation, and webhook events — keeping app state in sync with external providers in real-time.",
-      "Built cross-provider plan switching logic (Stripe ↔ Shopify) and handled edge cases like cancellations, renewals, and failed payments.",
-      "Developed an admin dashboard using TanStack Query for efficient data fetching, caching, and synchronization — enabling internal teams to manage subscriptions and monitor billing.",
-      "Implemented form validation using React Hook Form and Zod, improving reliability and UX across all subscription flows.",
-      "Built cron jobs to fetch and update trending sentiment data on hourly and daily schedules.",
-      "Worked on authentication systems, middleware, and request validation on the backend.",
+      "Contributed to subscription management for recurring and lifetime plans, including upgrades, downgrades, cancellations, renewals, and cross-provider transitions.",
+      "Integrated Stripe and Shopify APIs with webhook processing to synchronize billing and subscription state across payment providers.",
+      "Contributed to payment and subscription workflows covering provider transitions and billing state updates.",
+      "Built an internal admin dashboard using Next.js, TanStack Query, Zustand, and Tailwind CSS to streamline subscription tracking and reduce manual management.",
+      "Implemented form validation using React Hook Form and Zod across subscription-related flows.",
+      "Contributed to backend migration from Ruby to Node.js and data migration from PostgreSQL to MongoDB.",
+      "Exported PostgreSQL data using DBeaver, wrote a JavaScript transformation script to map tabular data into MongoDB document structures with additional fields, and imported the transformed data using MongoDB Compass.",
+      "Worked across frontend and backend features using Next.js, Node.js, Express.js, and MongoDB.",
     ],
     impact: [
-      "Successfully supported initial product launch with 8–10 weekly subscriptions.",
-      "Ensured stable, reliable payment flows across Stripe and Shopify.",
-      "Built scalable subscription infrastructure ready for platform growth.",
+      "Contributed to the initial product launch and subscription billing workflows.",
+      "Helped maintain billing synchronization across Stripe and Shopify.",
+      "Contributed to the backend and database transition from Ruby/PostgreSQL to Node.js/MongoDB.",
     ],
     technologies: [
       { name: "Next.js", icon: "/images/icons/nextjs.svg" },
@@ -113,9 +117,29 @@ export const professionalProjects: ProfessionalProject[] = [
   },
 ];
 
+
 // ─── Personal Projects (Open-source — have live + github links) ───────────────
 
 export const projects: Project[] = [
+  {
+    id: 8,
+    name: "CertiFlow",
+    description:
+      "CertiFlow is a full-stack provisional certificate application platform that streamlines certificate requests from submission to administrative verification and certificate generation. It supports draft recovery, application tracking workflows, secure document uploads using private AWS S3 storage and pre-signed URLs, and server-side PDF certificate generation. The backend uses Express.js and TypeScript with Mongoose schema modeling, centralized error handling, and Zod request validation.",
+    image: "/images/projects/certiflow.png",
+    liveUrl: "https://certiflow-ivory.vercel.app/signin",
+    githubUrl: "https://github.com/shivakrishnak13/certiflow",
+    technologies: [
+      { name: "Next.js", icon: "/images/icons/nextjs.svg" },
+      { name: "React", icon: "/images/icons/react.svg" },
+      { name: "TypeScript", icon: "/images/icons/typescript.svg" },
+      { name: "Express", icon: "/images/icons/express.svg" },
+      { name: "MongoDB", icon: "/images/icons/mongodb.svg" },
+      { name: "Mongoose", icon: "/images/icons/mongoose.svg" },
+      { name: "AWS S3", icon: "/images/icons/aws.svg" },
+      { name: "Zod", icon: "/images/icons/zod.svg" },
+    ],
+  },
   {
     id: 7,
     name: "CareerOS",
@@ -228,42 +252,43 @@ export const projects: Project[] = [
 
 // ─── Experience ───────────────────────────────────────────────────────────────
 
+
 export const experiences: ExperienceItem[] = [
   {
     id: 1,
     company: "Byldd",
     location: "Remote",
     companyStartDate: "2025-12-01",
-    companyEndDate: "2026-03-01",
+    companyEndDate: "2026-03-22",
     roles: [
       {
         title: "Full Stack Engineer",
         startDate: "2025-12-01",
-        endDate: "2026-04-01",
+        endDate: "2026-03-22",
         type: "Full-Time",
         highlights: [
           {
             title: "Subscription Management System",
             description:
-              "Designed and built a complete subscription lifecycle system — plan creation, upgrades, downgrades, cancellations, and renewals for both recurring and lifetime plans.",
+              "Contributed to the design and implementation of subscription management for recurring and lifetime plans, including upgrades, downgrades, cancellations, renewals, and cross-provider transitions.",
             icon: "💳",
           },
           {
             title: "Stripe & Shopify Integration",
             description:
-              "Integrated Stripe and Shopify APIs for payment flows, webhook handling, and cross-provider plan switching (Stripe ↔ Shopify) with real-time state sync.",
+              "Integrated Stripe and Shopify APIs with webhook processing for real-time billing synchronization and subscription state updates across payment providers.",
             icon: "🔗",
           },
           {
             title: "Admin Dashboard",
             description:
-              "Built internal admin UI using TanStack Query for efficient data fetching and caching — enabling teams to manage subscriptions, plans, and billing activities.",
+              "Built an internal admin dashboard using Next.js, TanStack Query, Zustand, and Tailwind CSS to streamline subscription tracking and reduce manual management.",
             icon: "📊",
           },
           {
-            title: "Frontend & Backend Features",
+            title: "Backend & Database Migration",
             description:
-              "Contributed across Next.js/React frontend and Node.js/Express/MongoDB backend, using React Hook Form + Zod for validation, and cron jobs for scheduled data updates.",
+              "Contributed to migrating backend services from Ruby to Node.js and data from PostgreSQL to MongoDB using DBeaver, a JavaScript transformation script, and MongoDB Compass.",
             icon: "🚀",
           },
         ],
@@ -272,9 +297,9 @@ export const experiences: ExperienceItem[] = [
     technologies: {
       frontend: ["Next.js", "React", "TypeScript"],
       styling: ["Tailwind CSS"],
-      state: ["TanStack Query", "React Hook Form", "Zod"],
-      backend: ["Node.js", "Express.js", "MongoDB"],
-      tools: ["Stripe API", "Shopify API", "Webhooks", "Cron Jobs"],
+      state: ["TanStack Query", "Zustand", "React Hook Form", "Zod"],
+      backend: ["Node.js", "Express.js", "MongoDB", "PostgreSQL"],
+      tools: ["Stripe API", "Shopify API", "Webhooks", "Cron Jobs", "DBeaver", "MongoDB Compass"],
     },
   },
   {
@@ -293,46 +318,55 @@ export const experiences: ExperienceItem[] = [
           {
             title: "AI Presentation Editor",
             description:
-              "Developed a fully interactive AI-powered presentation editor using Vue.js, React, and Fabric.js with prompt-to-slide and theme customization features.",
+              "Built and maintained a Vue.js presentation editor, prototyping with Fabric.js before moving to a DOM-based renderer with custom typography, shape manipulation, and layout controls for a platform with 34,000+ AI presentations.",
             icon: "🎨",
           },
           {
-            title: "Full Stack Integration",
+            title: "Presentation APIs & File Conversion",
             description:
-              "Built backend APIs with Node.js and Express.js for PPT JSON ↔ XML conversion, export/import workflows, and frontend synchronization.",
+              "Developed Node.js and Express.js REST APIs for AI presentation generation, PDF/PPTX export, and PowerPoint import/export through OpenXML-to-JSON parsing.",
             icon: "🧩",
           },
           {
-            title: "Performance & SEO",
+            title: "Dashboard Performance",
             description:
-              "Optimized app performance and developed a multilingual SEO platform in Next.js with blogs, tutorials, API Documentation and feature pages for improved visibility.",
+              "Optimized dashboard performance by restructuring Redux Toolkit state slices, memoizing expensive component subtrees with React.memo and useMemo, and applying TypeScript.",
             icon: "⚡",
           },
           {
-            title: "End-to-End Product Development",
+            title: "Marketing Platform & SEO",
             description:
-              "Contributed to architecture, deployment, and UI enhancements across React, Vue, and Next.js applications hosted on Vercel.",
+              "Built a multilingual Next.js marketing platform with JSON-LD structured data and Google Search Console integration, supporting 13,000+ platform sign-ups.",
             icon: "🚀",
+          },
+          {
+            title: "Code Quality",
+            description:
+              "Contributed to code reviews and authored custom ESLint rules to encourage reusable component patterns and UI consistency across codebases.",
+            icon: "🛠️",
           },
         ],
       },
     ],
     technologies: {
       frontend: ["React.js", "Vue.js", "Next.js", "TypeScript", "Fabric.js"],
-      styling: ["MUI", "SCSS", "Tailwind CSS", "Responsive Design"],
+      styling: ["Material-UI", "SCSS", "Tailwind CSS", "Responsive Design"],
       state: ["Redux Toolkit", "Pinia"],
       backend: ["Node.js", "Express.js", "REST APIs"],
       tools: [
         "PowerPoint Integration",
+        "OpenXML",
         "SEO Optimization",
-        "reCAPTCHA",
+        "Google Search Console",
         "Vite",
         "Webpack",
         "Jest",
+        "ESLint",
       ],
     },
   },
 ];
+
 
 // ─── Skills ───────────────────────────────────────────────────────────────────
 

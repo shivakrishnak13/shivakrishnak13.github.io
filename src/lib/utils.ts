@@ -4,8 +4,9 @@ export function calculateDuration(startDate: string, endDate: string | null = nu
   const start = new Date(startDate)
   const end = endDate ? new Date(endDate) : new Date()
 
-  const diffTime = Math.abs(end.getTime() - start.getTime())
-  const diffMonths = Math.floor(diffTime / (1000 * 60 * 60 * 24 * 30.44)) + 1
+  const startMonth = start.getFullYear() * 12 + start.getMonth()
+  const endMonth = end.getFullYear() * 12 + end.getMonth()
+  const diffMonths = Math.abs(endMonth - startMonth) + 1
 
   if (diffMonths >= 12) {
     const years = Math.floor(diffMonths / 12)
